@@ -260,6 +260,7 @@ lib.callback.register('ox_inventory:buyItem', function(source, data)
 				Inventory.SetSlot(playerInv, fromItem, count, metadata, data.toSlot)
 				playerInv.weight = newWeight
 				removeCurrency(playerInv, currency, price)
+        exports['ap-government']:chargeCityTax(source, "Sales", price)
 
 				if fromData.count then
 					shop.items[data.fromSlot].count = fromData.count - count

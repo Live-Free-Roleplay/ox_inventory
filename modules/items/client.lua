@@ -87,6 +87,9 @@ local ox_inventory = exports[shared.resource]
 -----------------------------------------------------------------------------------------------
 -- Clientside item use functions
 -----------------------------------------------------------------------------------------------
+Item('taser_cartridge', function(data, slot)
+    TriggerServerEvent('TaserFramework:ReloadTaser', GetPlayerServerId(PlayerId()))
+end)
 
 Item('bandage', function(data, slot)
 	local maxHealth = GetEntityMaxHealth(cache.ped)

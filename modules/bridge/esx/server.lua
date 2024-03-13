@@ -28,6 +28,7 @@ SetTimeout(500, function()
 end)
 
 server.accounts.black_money = 0
+server.accounts.money = 0
 
 ---@diagnostic disable-next-line: duplicate-set-field
 function server.setPlayerData(player)

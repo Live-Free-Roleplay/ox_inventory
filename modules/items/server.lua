@@ -10,12 +10,15 @@ Items.containers = require 'modules.items.containers'
 
 -- Possible metadata when creating garbage
 local trash = {
-	{description = 'A discarded burger carton.', weight = 50, image = 'trash_burger'},
+	{description = 'An old rolled up newspaper.', weight = 200, image = 'trash_newspaper'},
+	{description = 'A discarded burger shot carton.', weight = 50, image = 'trash_burgershot'},
 	{description = 'An empty soda can.', weight = 20, image = 'trash_can'},
 	{description = 'A mouldy piece of bread.', weight = 70, image = 'trash_bread'},
-	{description = 'An empty chips bag.', weight = 5, image = 'trash_chips'},
+	{description = 'An empty ciggarette carton.', weight = 10, image = 'trash_fags'},
 	{description = 'A slightly used pair of panties.', weight = 20, image = 'panties'},
-	{description = 'An old rolled up newspaper.', weight = 200, image = 'WEAPON_ACIDPACKAGE'},
+	{description = 'An empty coffee cup.', weight = 20, image = 'trash_coffee'},
+	{description = 'A crumpled up piece of paper.', weight = 5, image = 'trash_paper'},
+	{description = 'An empty chips bag.', weight = 5, image = 'trash_chips'},
 }
 
 ---@param _ table?
@@ -465,5 +468,16 @@ end
 -- end)
 
 -----------------------------------------------------------------------------------------------
+Item('ammobox-9', function(event, item, inventory, data, slot)
+	if event == 'usedItem' then
+    	Inventory.AddItem(inventory, 'ammo-9', 25)
+	end
+end)
+
+Item('ammobox-45', function(event, item, inventory, data, slot)
+	if event == 'usedItem' then
+    	Inventory.AddItem(inventory, 'ammo-45', 25)
+	end
+end)
 
 return Items
