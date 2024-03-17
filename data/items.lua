@@ -3205,6 +3205,55 @@ return {
 		close = true,
 		description = nil
 	},
+  
+  ['morphine30'] = {
+    label = 'Morphine 30MG',
+    weight = 200,
+    stack = true,
+    close = true,
+  },
+
+  ['morphine15'] = {
+    label = 'Morphine 15MG',
+    weight = 200,
+    stack = true,
+    close = true,
+  },
+
+  ['perc30'] = {
+    label = 'Percocet 30MG',
+    weight = 250,
+    stack = true,
+    close = true,
+  },
+
+  ['perc10'] = {
+    label = 'Percocet 10MG',
+    weight = 150,
+    stack = true,
+    close = true,
+  },
+
+  ['perc5'] = {
+    label = 'Percocet 5MG',
+    weight = 100,
+    stack = true,
+    close = true,
+  },
+
+  ['vic10'] = {
+    label = 'Vicodin 10MG',
+    weight = 150,
+    stack = true,
+    close = true,
+  },
+
+  ['vic5'] = {
+    label = 'Vicodin 5MG',
+    weight = 100,
+    stack = true,
+    close = true,
+  },
 
 	['sedative'] = {
 		label = 'Sedative',
