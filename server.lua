@@ -1,5 +1,4 @@
 if not lib then return end
-ESX = exports["es_extended"]:getSharedObject()
 
 if GetConvar('inventory:versioncheck', 'true') == 'true' then
 	lib.versionCheck('overextended/ox_inventory')
@@ -17,12 +16,12 @@ require 'modules.crafting.server'
 require 'modules.shops.server'
 
 exports.ox_inventory:registerHook('swapItems', function(payload)
-    local xPlayer = ESX.GetPlayerFromId(payload.source)
+		local inventory = Inventory(payload.source)
     local toSlotFin = payload.toSlot
     if type(payload.toSlot) == "table" then
       toSlotFin = payload.toSlot.slot
     end
-    if xPlayer.getJob().name == "police" then
+    if server.hasGroup(inventory, shared.police) then
       return true
     elseif payload.fromType == "player" and payload.source == payload.fromInventory and payload.fromInventory == payload.toInventory then
       return true
@@ -30,7 +29,11 @@ exports.ox_inventory:registerHook('swapItems', function(payload)
       if ((payload.fromSlot.slot >= 6 and payload.fromSlot.slot <= 8 and payload.source ~= payload.fromInventory and payload.fromType == "player") or 
         (payload.fromInventory == payload.toInventory and toSlotFin >= 6 and toSlotFin <= 8 and payload.toType == "player") or
         (payload.fromInventory ~= payload.toInventory and toSlotFin >= 6 and toSlotFin <= 8 and payload.source == payload.fromInventory and payload.toType == "player")) then
-        TriggerClientEvent('ox_inventory:noSteal', source)
+				TriggerClientEvent('ox_lib:notify', payload.source, {
+					title = 'Not Allowed',
+					description = 'You can not steal from a locked slot.',
+					type = 'error'
+				})
         return false
       else
         return true
