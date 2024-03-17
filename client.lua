@@ -7,6 +7,14 @@ local Utils = require 'modules.utils.client'
 local Weapon = require 'modules.weapon.client'
 local currentWeapon
 
+RegisterNetEvent('ox_inventory:noSteal', function()
+	lib.notify({
+    title = 'Not Allowed',
+    description = 'You can not steal from a locked slot.',
+    type = 'error'
+  })
+end)
+
 exports('getCurrentWeapon', function()
 	return currentWeapon
 end)
@@ -54,7 +62,7 @@ local function canOpenInventory()
         return shared.info('cannot open inventory', '(is busy)')
     end
 
-    if PlayerData.dead or IsPedFatallyInjured(playerPed) then
+    if PlayerData.dead or IsPedFatallyInjured(playerPed) or exports.wasabi_ambulance: isPlayerDead() then
         return shared.info('cannot open inventory', '(fatal injury)')
     end
 
@@ -74,6 +82,9 @@ local function canOpenTarget(ped)
 	or IsEntityPlayingAnim(ped, 'mp_arresting', 'idle', 3)
 	or IsEntityPlayingAnim(ped, 'missminuteman_1ig_2', 'handsup_base', 3)
 	or IsEntityPlayingAnim(ped, 'missminuteman_1ig_2', 'handsup_enter', 3)
+	or IsEntityPlayingAnim(ped, 'mini@cpr@char_b@cpr_def', 'cpr_pumpchest_idle', 3)
+	or IsPedCuffed(ped, 120, true)
+	or IsEntityPlayingAnim(ped, 'mp_am_hold_up', 'handsup_base', 49)
 	or IsEntityPlayingAnim(ped, 'random@mugging3', 'handsup_standing_base', 3)
 end
 
@@ -700,7 +711,7 @@ local invHotkeys = false
 
 ---@type function?
 local function registerCommands()
-	RegisterCommand('steal', openNearbyInventory, false)
+	--RegisterCommand('steal', openNearbyInventory, false)
 
 	local function openGlovebox(vehicle)
 		if not IsPedInAnyVehicle(playerPed, false) or not NetworkGetEntityIsNetworked(vehicle) then return end
