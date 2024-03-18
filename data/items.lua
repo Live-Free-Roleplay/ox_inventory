@@ -3582,14 +3582,6 @@ return {
 		description = nil
 	},
 
-	['sprunk'] = {
-		label = 'Sprunk',
-		weight = 250,
-		stack = true,
-		close = true,
-		description = nil
-	},
-
 	['stone'] = {
 		label = 'Stone',
 		weight = 500,
