@@ -333,7 +333,7 @@ return {
   VendingMachineWater = {
 		name = 'Water Machine',
 		inventory = {
-      { name = 'water', price = 2 },
+      { name = 'water', price = 3 },
 		},
 		model = {
 			`prop_vend_water_01`
@@ -344,14 +344,10 @@ return {
 		name = 'Drink Machine',
 		inventory = {
       { name = 'water', price = 5 },
-      { name = 'coke_1', price = 9 },
-      { name = 'pepsi_2', price = 9 },
-      { name = 'dew_3', price = 9 },
-      { name = 'dew_1', price = 9 },
-      { name = 'flemon', price = 9 },
-      { name = 'forange', price = 9 },
-      { name = '7up_1', price = 9 },
-      { name = 'monster', price = 14 },
+      { name = 'ecola', price = 9 },
+      { name = 'sprunk', price = 9 },
+      { name = 'orangotang', price = 9 },
+      { name = 'ejunk', price = 13 },
 		},
 		model = {
 			`prop_vend_fridge01`, `prop_vend_soda_02`, `prop_vend_soda_01`
@@ -361,20 +357,25 @@ return {
   VendingMachineSnacks = {
 		name = 'Snack Machine',
 		inventory = {
-      { name = 'lays', price = 8 },
+      { name = 'phatc_rib', price = 8 },
+			{ name = 'phatc_bch', price = 8 },
+			{ name = 'ps_qs', price = 7 },
 		},
 		model = {
 			`prop_vend_snak_01`, `prop_vend_snak_01_tu`
 		}
 	},
   
-  --[[VendingMachineCoffee = {
+  VendingMachineCoffee = {
 		name = 'Coffee Machine',
 		inventory = {
-      { name = 'coke_1', price = 5 },
+      { name = 'coffee_black', price = 5 },
+			{ name = 'coffee_mocha', price = 7 },
+			{ name = 'coffee_cpcno', price = 6 },
+			{ name = 'coffee_amrcno', price = 5 },
 		},
 		model = {
 			`prop_vend_coffe_01`
 		}
-	},--]]
+	},
 }

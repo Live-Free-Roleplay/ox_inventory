@@ -1,4 +1,1090 @@
 return {
+	['sandwich'] = { -- A simple sandwich for a simple day
+			label = 'Sandwich',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "A simple sandwich for a simple day",
+			client = {
+					status = { hunger = 200000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'prop_sandwich_01', 
+					pos = vec3(0.05, -0.02, -0.03), rot = vec3(150.0, 340.0, 170.0) },
+					usetime = 7500,
+			},
+	},
+
+	['burger'] = { -- A test hamburger that you can eat
+			label = 'Hamburger',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "A hamburger that you can eat",
+			client = {
+					status = { hunger = 230000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'prop_cs_burger_01', 
+					pos = vec3(0.05, -0.02, -0.03), rot = vec3(150.0, 340.0, 170.0) },
+					usetime = 7500,
+			},
+	},
+
+	['burger_chs'] = { -- A test hamburger that you can eat
+			label = 'Cheese Burger',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "A hamburger that you can eat, with cheese",
+			client = {
+					status = { hunger = 230000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'prop_cs_burger_01', 
+					pos = vec3(0.05, -0.02, -0.03), rot = vec3(150.0, 340.0, 170.0) },
+					usetime = 7500,
+			},
+	},
+
+	['burger_chsbcn'] = { -- A test hamburger that you can eat
+			label = 'Cheese Burger',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "A hamburger that you can eat, with cheese & bacon",
+			client = {
+					status = { hunger = 235000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'prop_cs_burger_01', 
+					pos = vec3(0.05, -0.02, -0.03), rot = vec3(150.0, 340.0, 170.0) },
+					usetime = 7500,
+			},
+	},
+
+	['hotdog'] = { -- A test hamburger that you can eat
+			label = 'Hotdog',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Not made with real dogs or meat",
+			client = {
+					status = { hunger = 150000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'prop_cs_hotdog_01', 
+					pos = vec3(0.06, -0.01, -0.03), rot = vec3(60.0, -90.0, 0.0) },
+					usetime = 7500,
+			},
+	},
+
+	['noodles'] = { -- Fuck those baked shits are good af
+			label = 'Thai Noodles',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "นี่คือบะหมี่",
+			client = {
+					status = { hunger = 160000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'v_ret_fh_noodle', 
+					pos = vec3(-0.03, 0.01, 0.05), 
+					rot = vec3(0.0, 0.0, -40.0) },
+					usetime = 7500,
+			},
+	},
+
+	['fr_fries'] = { -- A test hamburger that you can eat
+			label = 'French Fries',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Rib flavored chips, made with real wood chips",
+			client = {
+					status = { hunger = 120000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_food_chips', 
+					pos = vec3(-0.01, 0.0, -0.02), rot = vec3(0.0, 0.0, -45.0) },
+					usetime = 5000,
+			},
+	},
+
+	----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------------------- 
+	-- FOOD: Snacks
+
+
+	['phatc_rib'] = { -- A skeletons favorite snack
+			label = 'Phat Chips: Ribs',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Rib flavored chips, made with real wood chips",
+			client = {
+					status = { hunger = 80000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'ng_proc_food_chips01b', 
+					pos = vec3(0.0, 0.08, 0.05), rot = vec3(90.0, 0.0, -45.0) },
+					usetime = 5000,
+			},
+	},
+
+	['phatc_bch'] = { -- Biggie Cheese
+			label = 'Phat Chips: Big Cheese',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Cheese flavored chips, made with real rats",
+			client = {
+					status = { hunger = 80000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'ng_proc_food_chips01a', 
+					pos = vec3(0.0, 0.08, 0.05), rot = vec3(90.0, 0.0, -45.0) },
+					usetime = 5000,
+			},
+	},
+
+	['ps_qs'] = { -- is that candy
+			label = 'P\'s & Q\'s',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Candy make your tongue go brrrr",
+			client = {
+					status = { hunger = 60000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_candy_pqs', 
+					pos = vec3(0.0, 0.02, 0.05), rot = vec3(90.0, 0.0, -45.0) },
+					usetime = 5000,
+			},
+	},
+
+	['apple'] = { -- Apple good
+			label = 'Apple',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Yes, from the trees comes deez apples",
+			client = {
+					status = { hunger = 90000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'sf_prop_sf_apple_01a', 
+					pos = vec3(0.03, -0.02, -0.03), rot = vec3(300.0, 340.0, 170.0) },
+					usetime = 3000,
+			},
+	},
+
+	['banana'] = { -- banana good
+			label = 'Banana',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "b a n a n a n a n a n a",
+			client = {
+					status = { hunger = 90000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'v_res_tre_banana', 
+					pos = vec3(0.05, -0.02, 0.01), rot = vec3(270.0, 90.0, 0.0) },
+					usetime = 3000,
+			},
+	},
+	
+
+	----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------------------- 
+	-- FOOD: Deserts
+
+	['donut_chc'] = { -- Fuck those baked shits are good af
+			label = 'Chocolate Donut',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Mmmmm, refrence",
+			client = {
+					status = { hunger = 100000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'bzzz_foodpack_donut002', 
+					bone = 18905,
+					pos = vec3(0.13, 0.050, 0.020), 
+					rot = vec3(-50.0, 100.0, 270.0) },
+					usetime = 7500,
+			},
+	},
+
+	['donut_sby'] = { -- Fuck those baked shits are good af
+			label = 'Strawberry Donut',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Mmmmm, refrence",
+			client = {
+					status = { hunger = 100000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'bzzz_foodpack_donut001', 
+					bone = 18905,
+					pos = vec3(0.13, 0.050, 0.020), 
+					rot = vec3(-50.0, 100.0, 270.0) },
+					usetime = 7500,
+			},
+	},
+
+	['smore'] = { -- Fuck those baked shits are good af
+			label = 'Smore',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Mmmmm, refrence",
+			client = {
+					status = { hunger = 60000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'bzzz_food_dessert_a', 
+					bone = 18905,
+					pos = vec3(0.15, 0.03, 0.03), 
+					rot = vec3(-42.0, -36.0, 0.0) },
+					usetime = 7500,
+			},
+	},
+
+	['icecream_chr'] = { -- brain cold go brrrrr
+			label = 'Cherry Ice Cream',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Why yes, your brain is freezing",
+			client = {
+					status = { hunger = 70000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'bzzz_icecream_cherry', 
+					bone = 18905,
+					pos = vec3(0.14, 0.03, 0.01), 
+					rot = vec3(85.0, 70.0, -203.0) },
+					usetime = 7500,
+			},
+	},
+
+	['icecream_chc'] = { -- brain cold go brrrrr
+			label = 'Chocolate Ice Cream',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Why yes, your brain is freezing",
+			client = {
+					status = { hunger = 70000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'bzzz_icecream_chocolate', 
+					bone = 18905,
+					pos = vec3(0.14, 0.03, 0.01), 
+					rot = vec3(85.0, 70.0, -203.0) },
+					usetime = 7500,
+			},
+	},
+
+	['icecream_lmn'] = { -- brain cold go brrrrr
+			label = 'Lemon Ice Cream',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Why yes, your brain is freezing",
+			client = {
+					status = { hunger = 70000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'bzzz_icecream_lemon', 
+					bone = 18905,
+					pos = vec3(0.14, 0.03, 0.01), 
+					rot = vec3(85.0, 70.0, -203.0) },
+					usetime = 7500,
+			},
+	},
+
+	['icecream_pso'] = { -- brain cold go brrrrr
+			label = 'Pistachio Ice Cream',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Why yes, your brain is freezing",
+			client = {
+					status = { hunger = 70000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'bzzz_icecream_pistachio', 
+					bone = 18905,
+					pos = vec3(0.14, 0.03, 0.01), 
+					rot = vec3(85.0, 70.0, -203.0) },
+					usetime = 7500,
+			},
+	},
+
+	['icecream_rpy'] = { -- brain cold go brrrrr
+			label = 'Raspberry Ice Cream',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Why yes, your brain is freezing",
+			client = {
+					status = { hunger = 70000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'bzzz_icecream_raspberry', 
+					bone = 18905,
+					pos = vec3(0.14, 0.03, 0.01), 
+					rot = vec3(85.0, 70.0, -203.0) },
+					usetime = 7500,
+			},
+	},
+
+	['icecream_ckd'] = { -- brain cold go brrrrr
+			label = 'Cookie Dough Ice Cream',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Why yes, your brain is freezing",
+			client = {
+					status = { hunger = 70000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'bzzz_icecream_stracciatella', 
+					bone = 18905,
+					pos = vec3(0.14, 0.03, 0.01), 
+					rot = vec3(85.0, 70.0, -203.0) },
+					usetime = 7500,
+			},
+	},
+
+	['icecream_sby'] = { -- brain cold go brrrrr
+			label = 'Strawberry Ice Cream',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Why yes, your brain is freezing",
+			client = {
+					status = { hunger = 70000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'bzzz_icecream_strawberry', 
+					bone = 18905,
+					pos = vec3(0.14, 0.03, 0.01), 
+					rot = vec3(85.0, 70.0, -203.0) },
+					usetime = 7500,
+			},
+	},
+
+	['icecream_vna'] = { -- brain cold go brrrrr
+			label = 'Vanilla Ice Cream',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Why yes, your brain is freezing",
+			client = {
+					status = { hunger = 70000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'bzzz_icecream_walnut', 
+					bone = 18905,
+					pos = vec3(0.14, 0.03, 0.01), 
+					rot = vec3(85.0, 70.0, -203.0) },
+					usetime = 7500,
+			},
+	},
+
+
+
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------------------- 
+	-- DRINKS: General
+
+	['water'] = { -- Carbonized syrup is good for the soul
+			label = 'Water Bottle',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "If you think you need more, you do",
+			client = {
+					status = { thirst = 400000, stress = -10000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'vw_prop_casino_water_bottle_01a', 
+					pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
+					usetime = 7500,
+			},
+	},
+
+	['milk'] = { -- milky milky milky
+			label = 'Milk Carton',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "You need strong bones for crimes",
+			client = {
+					status = { thirst = 300000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'v_res_tt_milk', 
+					bone = 18905,
+					pos = vec3(0.10, 0.008, 0.070), 
+					rot = vec3(240.0, -60.0, 0.0) },
+					usetime = 7500,
+			},
+	},
+
+	----------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------------------- 
+    -- FOOD: Pizzas
+
+
+	['pizza_pep'] = { -- A simple sandwich for a simple day
+			label = 'Peperoni Pizza Slice',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Who put cheese on my pepperoni",
+			client = {
+					status = { hunger = 210000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'knjgh_pizzaslice5', 
+					pos = vec3(0.0500, -0.0300, -0.0700), 
+					rot = vec3(300.0, -10.0, 160.0),
+					bone = 60309 },
+					usetime = 7500,
+			},
+	},
+
+	['pizza_chs'] = { -- A simple sandwich for a simple day
+			label = 'Cheese Pizza Slice',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Is it enough cheese? No",
+			client = {
+					status = { hunger = 210000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'knjgh_pizzaslice4', 
+					pos = vec3(0.0500, -0.0300, -0.0700), 
+					rot = vec3(300.0, -10.0, 160.0),
+					bone = 60309 },
+					usetime = 7500,
+			},
+	},
+
+	['pizza_msh'] = { -- A simple sandwich for a simple day
+			label = 'Mushroom Pizza Slice',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Fungi on my pizza? Who thought of this?",
+			client = {
+					status = { hunger = 210000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'knjgh_pizzaslice3', 
+					pos = vec3(0.0500, -0.0300, -0.0700), 
+					rot = vec3(300.0, -10.0, 160.0),
+					bone = 60309 },
+					usetime = 7500,
+			},
+	},
+
+	['pizza_mgt'] = { -- A simple sandwich for a simple day
+			label = 'Margherita Pizza Slice',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "I know, I thought it was alcohol pizza too",
+			client = {
+					status = { hunger = 210000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'knjgh_pizzaslice2', 
+					pos = vec3(0.0500, -0.0300, -0.0700), 
+					rot = vec3(300.0, -10.0, 160.0),
+					bone = 60309 },
+					usetime = 7500,
+			},
+	},
+
+	['pizza_dmt'] = { -- A simple sandwich for a simple day
+			label = 'Double Meat Pizza Slice',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "When one meat isn't enough and 3 is weird",
+			client = {
+					status = { hunger = 210000 },
+					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+					prop = { model = 'knjgh_pizzaslice1', 
+					pos = vec3(0.0500, -0.0300, -0.0700), 
+					rot = vec3(300.0, -10.0, 160.0),
+					bone = 60309 },
+					usetime = 7500,
+			},
+	},
+
+
+	-- COFFEES
+
+
+	['coffee_black'] = { -- Carbonized syrup is good for the soul
+			label = 'Black Coffee',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "As black as the color wheel lets it be",
+			client = {
+					status = { thirst = 280000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'ng_proc_coffee_01a', 
+					pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
+					usetime = 7500,
+			},
+	},
+
+	['coffee_mocha'] = { -- Carbonized syrup is good for the soul
+			label = 'Mocha',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "What even is a mocha",
+			client = {
+					status = { thirst = 280000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'ng_proc_coffee_01a', 
+					pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
+					usetime = 7500,
+			},
+	},
+
+	['coffee_cpcno'] = { -- Carbonized syrup is good for the soul
+			label = 'Cappuccino',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "That might wake you up a smidge",
+			client = {
+					status = { thirst = 280000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'ng_proc_coffee_01a', 
+					pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
+					usetime = 7500,
+			},
+	},
+
+	['coffee_amrcno'] = { -- Carbonized syrup is good for the soul
+			label = 'Americano',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "American coffee, with an o",
+			client = {
+					status = { thirst = 280000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'ng_proc_coffee_01a', 
+					pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
+					usetime = 7500,
+			},
+	},
+
+
+	-- SODAS
+
+
+	['ecola'] = { -- Carbonized syrup is good for the soul
+			label = 'eCola',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Hey, there is soda in my cocaine",
+			client = {
+					status = { thirst = 200000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_ecola_can', 
+					pos = vec3(0.0, 0.0, 0.0), rot = vec3(0.0, 0.0, 130.0) },
+					usetime = 5000,
+			},
+	},
+
+	['sprunk'] = { -- Carbonized syrup is good for the soul
+			label = 'Sprunk',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "It tastes like water punched you in the throat",
+			client = {
+					status = { thirst = 200000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'ng_proc_sodacan_01b', 
+					pos = vec3(0.005, -0.001, 0.08), rot = vec3(0.0, 0.0, 160.0) },
+					usetime = 5000,
+			},
+	},
+
+	['orangotang'] = { -- Carbonized syrup is good for the soul
+			label = 'Orang-o-tang',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "I didn't even know people wanted this",
+			client = {
+					status = { thirst = 200000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_orang_can_01', 
+					pos = vec3(0.0, 0.0, 0.0), rot = vec3(0.0, 0.0, 130.0) },
+					usetime = 5000,
+			},
+	},
+
+	['ejunk'] = { -- Drinking too much of this wont kill you. I think.
+			label = 'Junk Energy',
+			weight = 350,
+			stack = true,
+			close = true,
+			description = "Drinking too much of this wont kill you. I think.",
+			client = {
+					status = { thirst = 200000, stress = -150000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'sf_prop_sf_can_01a', 
+					pos = vec3(0.025, 0.010, 0.05), rot = vec3(5.0, 5.0, -180.5) },
+					usetime = 5000,
+			},
+	},
+
+
+
+
+
+
+
+
+
+
+	----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------------------- 
+	-- ALCOHOL: Beers
+	['rancho_beer'] = { -- Good ol imported beer from mexico
+			label = 'Cerbesa Barracho',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Good ol imported beer from mexico",
+			client = {
+					status = { drunk = 90000, thirst = 40000, stress = -200000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_beer_bottle', 
+					pos = vec3(0.02, -0.01, -0.14), rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 7500,
+			},
+	},
+
+	['dusche_beer'] = { -- Good ol imported beer from germany
+			label = 'Dusche Beer',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Good ol imported beer from germany",
+			client = {
+					status = { drunk = 90000, thirst = 40000, stress = -200000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_beerdusche', 
+					pos = vec3(0.01, -0.01, -0.12), rot = vec3(5.0, 5.0, -180.5) },
+					usetime = 7500,
+			},
+	},
+
+	['stronzo_beer'] = { -- Good ol imported beer from italy
+			label = 'Stronzo Beer',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Good ol imported beer from italy",
+			client = {
+					status = { drunk = 90000, thirst = 40000, stress = -200000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_beer_stz', 
+					pos = vec3(0.01, -0.02, -0.15), rot = vec3(5.0, 5.0, -180.5) },
+					usetime = 7500,
+			},
+	},
+
+	['patriot_beer'] = { -- Good ol homemade beer from the brewery
+			label = 'Patriot Beer',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Good ol homemade beer from the brewery",
+			client = {
+					status = { drunk = 90000, thirst = 40000, stress = -200000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_beer_patriot', 
+					pos = vec3(0.01, -0.02, -0.15), rot = vec3(5.0, 5.0, -180.5) },
+					usetime = 7500,
+			},
+	},
+
+	-- ALCOHOL: Bottles
+	['bb_bourgeoix'] = { -- Good ol imported beer from mexico
+			label = 'Bottle of Bourgeoix Cognac',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 150000, thirst = 30000, stress = -500000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_bottle_cognac', 
+					pos = vec3(0.02, -0.01, -0.14), rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 7500,
+			},
+	},
+
+	['bb_cariaque'] = { -- Good ol imported beer from mexico
+			label = 'Bottle of Cariaque Bourbon',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 190000, thirst = 30000, stress = -500000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_bottle_brandy', 
+					pos = vec3(0.02, -0.01, -0.14), rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 7500,
+			},
+	},
+
+	['cb_bleuterd'] = { -- Good ol imported beer from mexico
+			label = 'Bottle of Bleuter\'d Champagne',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "For those fancy events",
+			client = {
+					status = { drunk = 220000, thirst = 30000, stress = -500000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_champ_01b', 
+					pos = vec3(0.02, -0.01, -0.14), rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 7500,
+			},
+	},
+
+	['rb_ragga'] = { -- Good ol imported beer from mexico
+			label = 'Bottle of Ragga Rum',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "A pirates drink for me",
+			client = {
+					status = { drunk = 200000, thirst = 30000, stress = -500000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_rum_bottle', 
+					pos = vec3(0.02, -0.01, -0.14), rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 7500,
+			},
+	},
+
+	['tb_tequilya'] = { -- Good ol imported beer from mexico
+			label = 'Bottle of Tequilya Tequila',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "For extra kick, add snake venom",
+			client = {
+					status = { drunk = 200000, thirst = 30000, stress = -500000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_tequila_bottle', 
+					pos = vec3(0.02, -0.01, -0.14), rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 7500,
+			},
+	},
+
+	['vb_nogo'] = { -- Good ol imported beer from mexico
+			label = 'Bottle of Nogo Vodka',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Chilled like the mountains of Siberia",
+			client = {
+					status = { drunk = 200000, thirst = 30000, stress = -500000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_vodka_bottle', 
+					pos = vec3(0.02, -0.01, -0.14), rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 7500,
+			},
+	},
+
+	['wb_mount'] = { -- Good ol imported beer from mexico
+			label = 'Bottle of Mount Whiskey',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "The cowboy's choice for getting plastered",
+			client = {
+					status = { drunk = 200000, thirst = 30000, stress = -500000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_cs_whiskey_bottle', 
+					pos = vec3(0.02, -0.01, -0.14), rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 7500,
+			},
+	},
+
+	['wb_richards'] = { -- Good ol imported beer from mexico
+			label = 'Bottle of Richard\'s Whiskey',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "For the refined taste buds you so clearly have",
+			client = {
+					status = { drunk = 200000, thirst = 30000, stress = -500000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'prop_bottle_richard', 
+					pos = vec3(0.02, -0.01, -0.14), rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 7500,
+			},
+	},
+
+	-- ALCOHOL: Glasses
+	['bg_bourgeiox'] = { -- Good ol imported beer from mexico
+			label = 'Glass of Bourgeoix Cognac',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'amb@world_human_drinking@coffee@male@idle_a', clip = 'idle_c' },
+					prop = { model = 'prop_drink_whisky', 
+					pos = vec3(0.16, -0.02, -0.06), 
+					rot = vec3(270.00, 0.00, 0.00),
+					bone = 57005},
+					usetime = 12000,
+			},
+	},
+
+	['bg_cariaque'] = { -- Good ol imported beer from mexico
+			label = 'Glass of Cariaque Bourbon',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'amb@world_human_drinking@coffee@male@idle_a', clip = 'idle_c' },
+					prop = { model = 'prop_drink_whisky', 
+					pos = vec3(0.16, -0.02, -0.06), 
+					rot = vec3(270.00, 0.00, 0.00),
+					bone = 57005},
+					usetime = 12000,
+			},
+	},
+
+	['bs_bourgeiox'] = { -- Good ol imported beer from mexico
+			label = 'Shot of Bourgeoix Cognac',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'p_cs_shot_glass_2_s', 
+					pos = vec3(0.02, -0.01, 0.08), 
+					rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 2000,
+			},
+	},
+
+	['bs_cariaque'] = { -- Good ol imported beer from mexico
+			label = 'Shot of Cariaque Bourbon',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'p_cs_shot_glass_2_s', 
+					pos = vec3(0.02, -0.01, 0.08), 
+					rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 2000,
+			},
+	},
+
+	['cg_bleuterd'] = { -- Good ol imported beer from mexico
+			label = 'Glass of Bleuter\'d Champagne',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'amb@world_human_drinking@coffee@male@idle_a', clip = 'idle_c' },
+					prop = { model = 'prop_drink_champ', 
+					pos = vec3(0.16, -0.19, -0.06), 
+					rot = vec3(270.00, 0.00, 0.00),
+					bone = 57005},
+					usetime = 12000,
+			},
+	},
+
+	['tg_martini'] = { -- Good ol imported beer from mexico
+			label = 'Martini',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'amb@world_human_drinking@coffee@male@idle_a', clip = 'idle_c' },
+					prop = { model = 'prop_tequila', 
+					pos = vec3(0.16, -0.12, -0.06), 
+					rot = vec3(280.00, 90.00, 0.00),
+					bone = 57005},
+					usetime = 12000,
+			},
+	},
+
+	['tg_sunrise'] = { -- Good ol imported beer from mexico
+			label = 'Tequilya Sunrise',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'amb@world_human_drinking@coffee@male@idle_a', clip = 'idle_c' },
+					prop = { model = 'prop_tequsunrise', 
+					pos = vec3(0.16, -0.1, -0.05), 
+					rot = vec3(270.00, 0.00, 0.00),
+					bone = 57005},
+					usetime = 12000,
+			},
+	},
+
+	['tg_tequilya'] = { -- Good ol imported beer from mexico
+			label = 'Glass of Tequilya',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'amb@world_human_drinking@coffee@male@idle_a', clip = 'idle_c' },
+					prop = { model = 'prop_drink_whisky', 
+					pos = vec3(0.16, -0.02, -0.06), 
+					rot = vec3(270.00, 0.00, 0.00),
+					bone = 57005},
+					usetime = 12000,
+			},
+	},
+
+	['ts_tequilya'] = { -- Good ol imported beer from mexico
+			label = 'Shot of Tequilya',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'p_cs_shot_glass_2_s', 
+					pos = vec3(0.02, -0.01, 0.08), 
+					rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 2000,
+			},
+	},
+
+	['vg_nogo'] = { -- Good ol imported beer from mexico
+			label = 'Glass of Nogo Vodka',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'amb@world_human_drinking@coffee@male@idle_a', clip = 'idle_c' },
+					prop = { model = 'prop_drink_whisky', 
+					pos = vec3(0.16, -0.02, -0.06), 
+					rot = vec3(270.00, 0.00, 0.00),
+					bone = 57005},
+					usetime = 12000,
+			},
+	},
+
+	['vs_nogo'] = { -- Good ol imported beer from mexico
+			label = 'Shot of Nogo Vodka',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'p_cs_shot_glass_2_s', 
+					pos = vec3(0.02, -0.01, 0.08), 
+					rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 2000,
+			},
+	},
+
+	['wg_mount'] = { -- Good ol imported beer from mexico
+			label = 'Glass of Mount Whiskey',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'amb@world_human_drinking@coffee@male@idle_a', clip = 'idle_c' },
+					prop = { model = 'prop_drink_whisky', 
+					pos = vec3(0.16, -0.02, -0.06), 
+					rot = vec3(270.00, 0.00, 0.00),
+					bone = 57005},
+					usetime = 12000,
+			},
+	},
+
+	['wg_richards'] = { -- Good ol imported beer from mexico
+			label = 'Glass of Richard\'s Whiskey',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'amb@world_human_drinking@coffee@male@idle_a', clip = 'idle_c' },
+					prop = { model = 'prop_drink_whisky', 
+					pos = vec3(0.16, -0.02, -0.06), 
+					rot = vec3(270.00, 0.00, 0.00),
+					bone = 57005},
+					usetime = 12000,
+			},
+	},
+
+	['ws_mount'] = { -- Good ol imported beer from mexico
+			label = 'Shot of Mount Whiskey',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'p_cs_shot_glass_2_s', 
+					pos = vec3(0.02, -0.01, 0.08), 
+					rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 2000,
+			},
+	},
+
+	['ws_richards'] = { -- Good ol imported beer from mexico
+			label = 'Shot of Richard\'s Whiskey',
+			weight = 290,
+			stack = true,
+			close = true,
+			description = "Like whiskey, but more ouch",
+			client = {
+					status = { drunk = 80000, thirst = 10000, stress = -300000 },
+					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+					prop = { model = 'p_cs_shot_glass_2_s', 
+					pos = vec3(0.02, -0.01, 0.08), 
+					rot = vec3(1.0, 5.0, -182.5) },
+					usetime = 2000,
+			},
+	},
   ['ammobox-45'] = { -- idea: Player uses item to show badge prop
       label = 'Case of .45 ACP',
       weight = 250,
@@ -343,30 +1429,6 @@ return {
 	['empty_cup'] = {
 		label = 'Empty cup',
 		weight = 100,
-		stack = true,
-		close = true,
-	},
-	['sprunk'] = {
-		label = 'Sprunk',
-		weight = 250,
-		stack = true,
-		close = true,
-	},
-	['ecola'] = {
-		label = 'eCola',
-		weight = 250,
-		stack = true,
-		close = true,
-	},
-	['ecola_light'] = {
-		label = 'eCola Light',
-		weight = 250,
-		stack = true,
-		close = true,
-	},
-	['drang_o_tang'] = {
-		label = 'Drang o Tang',
-		weight = 250,
 		stack = true,
 		close = true,
 	},
@@ -970,310 +2032,6 @@ return {
           end
       }
   },
-  
-  ['7up_1'] = {---Spawn name 
-    label = '7 UP', ---Inventory Lable
-    weight = 350, ----Weight
-    client = {
-      status = { thirst = 100000 }, --Status change amount
-      anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },----Animation
-      prop = { model = `wasabi_7up_1`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, 45.5) }, ---Prop position
-      usetime = 2500, --- How long the player will drink
-      notification = 'You quenched your thirst with 7 UP' -- In game message when drinking
-    }
-  },
-
-  ['7up_2'] = {
-    label = '7 UP',
-    weight = 350,
-    client = {
-      status = { thirst = 100000 },
-      anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-      prop = { model = `wasabi_7up_2`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, 90.5) },
-      usetime = 2500,
-      notification = 'You quenched your thirst with 7 UP'
-    }
-  },
-
-  ['flemon'] = {
-    label = 'Fanta Lemon',
-    weight = 350,
-    client = {
-      status = { thirst = 100000 },
-      anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-      prop = { model = `wasabi_fanta_lemon_1`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, 90.5) },
-      usetime = 2500,
-      notification = 'You quenched your thirst with Fanta'
-    }
-  },
-
-  ['forange'] = {
-    label = 'Fanta Orange',
-    weight = 350,
-    client = {
-      status = { thirst = 100000 },
-      anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-      prop = { model = `wasabi_fanta_orange_1`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, 0.5) },
-      usetime = 2500,
-      notification = 'You quenched your thirst with Fanta'
-    }
-  },
-
-  ['dew_1'] = {
-    label = 'Mountain Dew',
-    weight = 350,
-    client = {
-      status = { thirst = 100000 },
-      anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-      prop = { model = `wasabi_mntdew_1`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, 90.5) },
-      usetime = 2500,
-      notification = 'You quenched your thirst with Mountain Dew'
-    }
-  },
-
-  ['dew_2'] = {
-    label = 'Mountain Dew',
-    weight = 350,
-    client = {
-      status = { thirst = 100000 },
-      anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-      prop = { model = `wasabi_mntdew_2`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -20.5) },
-      usetime = 2500,
-      notification = 'You quenched your thirst with Mountain Dew'
-    }
-  },
-
-  ['dew_3'] = {
-    label = 'Mountain Dew',
-    weight = 350,
-    client = {
-      status = { thirst = 100000 },
-      anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-      prop = { model = `wasabi_mntdew_3`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, 0.5) },
-      usetime = 2500,
-      notification = 'You quenched your thirst with Mountain Dew'
-    }
-  },
-
-  ['monster'] = {
-    label = 'Monster',
-    weight = 350,
-    client = {
-      status = { thirst = 100000 },
-      anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-      prop = { model = `wasabi_monster_1`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, 90.5) },
-      usetime = 2500,
-      notification = 'You quenched your thirst with Monster Energy'
-    }
-  },
-
-  ['pepsi_1'] = {
-    label = 'Pepsi',
-    weight = 350,
-    client = {
-      status = { thirst = 100000 },
-      anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-      prop = { model = `wasabi_pepsi_1`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, 40.5) },
-      usetime = 2500,
-      notification = 'You quenched your thirst with Pepsi'
-    }
-  },
-
-  ['pepsi_2'] = {
-    label = 'Pepsi',
-    weight = 350,
-    client = {
-      status = { thirst = 100000 },
-      anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-      prop = { model = `wasabi_pepsi_2`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, 0.5) },
-      usetime = 2500,
-      notification = 'You quenched your thirst with Pepsi'
-    }
-  },
-
-  ['coke_1'] = {
-    label = 'Coca-Cola',
-    weight = 350,
-    client = {
-      status = { thirst = 100000 },
-      anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-      prop = { model = `wasabi_coke_1`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, 0.5) },
-      usetime = 2500,
-      notification = 'You quenched your thirst with Coke'
-    }
-  },
-
-  ['cheetos_001'] = {
-    label = 'Cheetos Cheesy Jalapeno',
-    weight = 350,
-    client = {
-      status = { hunger = 100000 },
-      anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-      prop = { model = `prop_wasabi_snacks_cheetos_001`,
-      pos = vec3(0.08, -0.25, 0.23),
-      rot = vec3(5.0, -95.0, 0.5) },
-      usetime = 3000,
-      notification = 'You have eaten some Cheetos'
-    }
-  },
-  
-  ['cheetos_002'] = {
-    label = 'Cheetos Flamin Hot Lime',
-    weight = 350,
-    client = {
-      status = { hunger = 100000 },
-      anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-      prop = { model = `prop_wasabi_snacks_cheetos_002`,
-      pos = vec3(0.08, -0.25, 0.23),
-      rot = vec3(5.0, -95.0, 0.5) },
-      usetime = 3000,
-      notification = 'You have eaten some Cheetos'
-    }
-  },
-  
-  ['cheetos_003'] = {
-    label = 'Cheetos (Bag of Bones)',
-    weight = 350,
-    client = {
-      status = { hunger = 100000 },
-      anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-      prop = { model = `prop_wasabi_snacks_cheetos_003`,
-      pos = vec3(0.08, -0.25, 0.23),
-      rot = vec3(5.0, -95.0, 0.5) },
-      usetime = 3000,
-      notification = 'You have eaten some Cheetos'
-    }
-  },
-  
-  ['cheetos_004'] = {
-    label = 'Cheetos Flamin Hot',
-    weight = 350,
-    client = {
-      status = { hunger = 100000 },
-      anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-      prop = { model = `prop_wasabi_snacks_cheetos_002`,
-      pos = vec3(0.08, -0.25, 0.23),
-      rot = vec3(5.0, -95.0, 0.5) },
-      usetime = 3000,
-      notification = 'You have eaten some Cheetos'
-    }
-  },
-  
-  ['frito_twist'] = {
-    label = 'Fritos Flavor Twists(Honey BBQ)',
-    weight = 350,
-    client = {
-      status = { hunger = 100000 },
-      anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-      prop = { model = `prop_wasabi_snacks_frito_twist`,
-      pos = vec3(0.08, -0.25, 0.23),
-      rot = vec3(5.0, -95.0, 0.5) },
-      usetime = 3000,
-      notification = 'You have eaten some Fritos'
-    }
-  },
-  
-  ['fritos'] = {
-    label = 'Fritos',
-    weight = 350,
-    client = {
-      status = { hunger = 100000 },
-      anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-      prop = { model = `prop_wasabi_snacks_fritos`,
-      pos = vec3(0.08, -0.25, 0.23),
-      rot = vec3(5.0, -95.0, 0.5) },
-      usetime = 3000,
-      notification = 'You have eaten some Fritos'
-    }
-  },
-  
-  ['doritos'] = {
-    label = 'Doritos',
-    weight = 350,
-    client = {
-      status = { hunger = 100000 },
-      anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-      prop = { model = `prop_wasabi_snacks_doritos`,
-      pos = vec3(0.08, -0.25, 0.23),
-      rot = vec3(5.0, -95.0, 0.5) },
-      usetime = 3000,
-      notification = 'You have eaten some Doritos'
-    }
-  },
-    
-  ['lays'] = {
-    label = 'Lays',
-    weight = 350,
-    client = {
-      status = { hunger = 100000 },
-      anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-      prop = { model = `prop_wasabi_snacks_lays`,
-      pos = vec3(0.08, -0.25, 0.23),
-      rot = vec3(5.0, -95.0, 0.5) },
-      usetime = 3000,
-      notification = 'You have eaten some Chips'
-    }
-  },
-  
-  ['lays_sc'] = {
-    label = 'Lays (Sour Cream & Onion)',
-    weight = 350,
-    client = {
-      status = { hunger = 100000 },
-      anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-      prop = { model = `prop_wasbabi_snacks_lays_sc`,
-      pos = vec3(0.08, -0.25, 0.23),
-      rot = vec3(5.0, -95.0, 0.5) },
-      usetime = 3000,
-      notification = 'You have eaten some Sour Cream & Onion Lays'
-    }
-  },
-  
-  ['lays_bbq'] = {
-    label = 'Lays (BBQ)',
-    weight = 350,
-    client = {
-      status = { hunger = 100000 },
-      anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-      prop = { model = `prop_wasabi_snacks_lays_bbq`,
-      pos = vec3(0.08, -0.25, 0.23),
-      rot = vec3(5.0, -95.0, 0.5) },
-      usetime = 3000,
-      notification = 'You have eaten some BBQ Lays'
-    }
-  },
-  
-	['testburger'] = {
-		label = 'Test Burger',
-		weight = 220,
-		degrade = 60,
-		client = {
-			status = { hunger = 200000 },
-			anim = 'eating',
-			prop = 'burger',
-			usetime = 2500,
-			export = 'ox_inventory_examples.testburger'
-		},
-		server = {
-			export = 'ox_inventory_examples.testburger',
-			test = 'what an amazingly delicious burger, amirite?'
-		},
-		buttons = {
-			{
-				label = 'Lick it',
-				action = function(slot)
-					print('You licked the burger')
-				end
-			},
-			{
-				label = 'Squeeze it',
-				action = function(slot)
-					print('You squeezed the burger :(')
-				end
-			}
-		},
-		consume = 0.3
-	},
 
 	['bandage'] = {
 		label = 'Bandage',
@@ -1285,30 +2043,6 @@ return {
 
 	['black_money'] = {
 		label = 'Dirty Money',
-	},
-
-	['burger'] = {
-		label = 'Burger',
-		weight = 220,
-		client = {
-			status = { hunger = 400000 },
-			anim = 'eating',
-			prop = 'burger',
-			usetime = 2500,
-			notification = 'You ate a delicious burger'
-		},
-	},
-
-	['cola'] = {
-		label = 'eCola',
-		weight = 350,
-		client = {
-			status = { thirst = 400000 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = `prop_ecola_can`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
-			usetime = 2500,
-			notification = 'You quenched your thirst with cola'
-		}
 	},
 
 	['parachute'] = {
@@ -1343,18 +2077,6 @@ return {
 		label = 'Identification',
 	},
 
-	['panties'] = {
-		label = 'Knickers',
-		weight = 10,
-		consume = 0,
-		client = {
-			status = { thirst = -100000, stress = -25000 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = `prop_cs_panties_02`, pos = vec3(0.03, 0.0, 0.02), rot = vec3(0.0, -13.5, -1.5) },
-			usetime = 2500,
-		}
-	},
-
 	['lockpick'] = {
 		label = 'Lockpick',
 		weight = 160,
@@ -1362,26 +2084,6 @@ return {
 
 	['money'] = {
 		label = 'Money',
-	},
-
-	['mustard'] = {
-		label = 'Mustard',
-		weight = 500,
-		client = {
-			status = { hunger = 25000, thirst = 25000 },
-			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
-			prop = { model = `prop_food_mustard`, pos = vec3(0.01, 0.0, -0.07), rot = vec3(1.0, 1.0, -1.5) },
-			usetime = 2500,
-			notification = 'You.. drank mustard'
-		}
-	},
-
-	['water'] = {
-		label = 'Water',
-		weight = 350,
-    stack = true,
-		close = true,
-		description = nil,
 	},
 
 	['radio'] = {
@@ -2323,14 +3025,6 @@ return {
 		description = nil
 	},
 
-	['bread'] = {
-		label = 'Bread',
-		weight = 250,
-		stack = true,
-		close = true,
-		description = nil
-	},
-
 	['brown_jelly'] = {
 		label = 'Brown Jelly',
 		weight = 250,
@@ -2544,14 +3238,6 @@ return {
       }
   },
 
-	['energy_drink'] = {
-		label = 'Energy Drink',
-		weight = 250,
-		stack = true,
-		close = true,
-		description = nil
-	},
-
 	['evidencebag'] = {
 		label = 'Evidence Bag',
 		weight = 100,
@@ -2566,14 +3252,6 @@ return {
 		stack = true,
 		close = true,
 		description = nil
-	},
-
-	['fried_chicken'] = {
-		label = 'Fried Chicken',
-		weight = 250,
-		stack = true,
-		close = true,
-		description = nil,
 	},
 
 	['garbage_bag'] = {
@@ -2696,14 +3374,6 @@ return {
 		description = nil
 	},
 
-	['milk'] = {
-		label = 'Milk',
-		weight = 250,
-		stack = true,
-		close = true,
-		description = nil
-	},
-
 	['morphine'] = {
 		label = 'Morphine',
 		weight = 250,
@@ -2766,14 +3436,6 @@ return {
 		stack = true,
 		close = true,
 		description = nil,
-	},
-
-	['pizza_slice'] = {
-		label = 'Pizza Slice',
-		weight = 250,
-		stack = true,
-		close = true,
-		description = nil
 	},
 
 	['pliers'] = {
@@ -2920,8 +3582,8 @@ return {
 		description = nil
 	},
 
-	['sprite'] = {
-		label = 'Sprite',
+	['sprunk'] = {
+		label = 'Sprunk',
 		weight = 250,
 		stack = true,
 		close = true,
@@ -2960,14 +3622,6 @@ return {
 
 	['sulfric_acid'] = {
 		label = 'Sulfric Acid',
-		weight = 250,
-		stack = true,
-		close = true,
-		description = nil
-	},
-
-	['taco'] = {
-		label = 'Taco',
 		weight = 250,
 		stack = true,
 		close = true,
@@ -3590,241 +4244,113 @@ return {
 
 	["WEAPON_GRENADELAUNCHER"] = {
 		label = "Gernade Launcher",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	["WEAPON_RAILGUN"] = {
 		label = "Rail Gun",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	["WEAPON_COMPACTLAUNCHER"] = {
 		label = "Compact Launcher",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	["WEAPON_RPG"] = {
 		label = "RPG",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	["WEAPON_MINIGUN"] = {
 		label = "Minigun",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	["AMMO_WEAPON_COMBATPISTOL"] = {
 		label = "Combat Pistol Mag",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	["AMMO_WEAPON_PISTOL"] = {
 		label = "Pistol Mag",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	["AMMO_WEAPON_SMG"] = {
 		label = "SMG Ammo",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	["AMMO_WEAPON_SNSPISTOL"] = {
 		label = "SNS Pistol Mag",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	["AMMO_WEAPON_STUNGUN"] = {
 		label = "Bat",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	["WEAPON_HOMINGLAUNCHER"] = {
 		label = "Homing Launcher",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	["WEAPON_HANDCUFFS"] = {
 		label = "Handcuffs",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	["WEAPON_STINGER"] = {
 		label = "Stinger",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	["WEAPON_AUTOSHOTGUN"] = {
 		label = "Auto Shotgun",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
 
 	["WEAPON_GARBAGEBAG"] = {
 		label = "Garbage Bag",
-		weight = 1,
+		weight = 100,
 		stack = true,
 		close = true,
 	},
 
 	["WEAPON_DIGISCANNER"] = {
 		label = "Digiscanner",
-		weight = 1,
+		weight = 300,
 		stack = true,
 		close = true,
 	},
-        
-    ['cigar'] = {
-        label = 'cigar',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "Cigar"
-    },
-        
-    ['sludgie'] = {
-        label = 'sludgie',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "Sludgie"
-    },
-        
-    ['coffee'] = {
-        label = 'coffee',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "Coffee"
-    },
-        
-    ['cigs_69brand'] = {
-        label = '69 brand',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "cigs_69brand"
-    },
-        
-    ['cigs_cardiaque'] = {
-        label = 'cardiaque',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "cigs_cardiaque"
-    },
-        
-    ['cigs_debonaireblue'] = {
-        label = 'debonaire blue',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "cigs_debonaireblue"
-    },
-        
-    ['cigs_debonairegreen'] = {
-        label = 'debonaire green',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "cigs_debonairegreen"
-    },
-        
-    ['cigs_redwood'] = {
-        label = 'red wood',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "cigs_redwood"
-    },
-        
-    ['cigar'] = {
-        label = 'cigar',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "Cigar"
-    },
-        
-    ['sludgie'] = {
-        label = 'sludgie',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "Sludgie"
-    },
-        
-    ['coffee'] = {
-        label = 'coffee',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "Coffee"
-    },
-        
-    ['cigs_69brand'] = {
-        label = '69 brand',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "cigs_69brand"
-    },
-        
-    ['cigs_cardiaque'] = {
-        label = 'cardiaque',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "cigs_cardiaque"
-    },
-        
-    ['cigs_debonaireblue'] = {
-        label = 'debonaire blue',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "cigs_debonaireblue"
-    },
-        
-    ['cigs_debonairegreen'] = {
-        label = 'debonaire green',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "cigs_debonairegreen"
-    },
-        
-    ['cigs_redwood'] = {
-        label = 'red wood',
-        weight = 0,
-        stack = true,
-        close = true,
-        description = "cigs_redwood"
-    },
 }
