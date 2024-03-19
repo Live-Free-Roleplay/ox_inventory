@@ -30,7 +30,7 @@ return {
 	},
 
 	['burger_chs'] = { -- A test hamburger that you can eat
-			label = 'Cheese Burger',
+			label = 'Cheeseburger',
 			weight = 350,
 			stack = true,
 			close = true,
@@ -45,7 +45,7 @@ return {
 	},
 
 	['burger_chsbcn'] = { -- A test hamburger that you can eat
-			label = 'Cheese Burger',
+			label = 'Bacon Cheeseburger',
 			weight = 350,
 			stack = true,
 			close = true,
@@ -430,7 +430,7 @@ return {
 
 
 	['pizza_pep'] = { -- A simple sandwich for a simple day
-			label = 'Peperoni Pizza Slice',
+			label = 'Pepperoni Pizza Slice',
 			weight = 350,
 			stack = true,
 			close = true,
@@ -534,7 +534,7 @@ return {
 	},
 
 	['coffee_mocha'] = { -- Carbonized syrup is good for the soul
-			label = 'Mocha',
+			label = 'Mocha Coffee',
 			weight = 350,
 			stack = true,
 			close = true,
@@ -3297,14 +3297,6 @@ return {
 
 	['ice'] = {
 		label = 'Ice',
-		weight = 250,
-		stack = true,
-		close = true,
-		description = nil
-	},
-
-	['jolly_ranchers'] = {
-		label = 'Jolly Ranchers',
 		weight = 250,
 		stack = true,
 		close = true,
