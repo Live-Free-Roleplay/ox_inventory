@@ -2086,13 +2086,6 @@ return {
 		label = 'Money',
 	},
 
-	['radio'] = {
-		label = 'Radio',
-		weight = 1000,
-		stack = false,
-		allowArmed = true
-	},
-
 	['armour'] = {
 		label = 'Body Armor',
 		weight = 5000,
@@ -3454,21 +3447,32 @@ return {
 		description = nil
 	},
   
-  ['police_radio'] = {
+  ['radio'] = {
     label = 'Radio',
     weight = 250,
     stack = false,
     allowArmed = true,
     consume = 0,
     client = {
-      export = 'zerio-radio.Open',
-      remove = function(total)
-          if total < 1 then
-              TriggerEvent('zerio-radio:client:removedradio')
-          end
-      end
+			export = 'zerio-radio.Open',
+			remove = function(total)
+				if total < 1 then
+					TriggerEvent('zerio-radio:client:removedradio')
+				end
+			end
     }
-  },
+	},
+
+	['radioscanner'] = {
+    label = 'Radio Scanner',
+    weight = 500,
+    stack = false,
+    allowArmed = true,
+    consume = 0,
+    client = {
+			export = 'zerio-radio.OpenScanner'
+    }
+	},
 
 	['potassium_salt'] = {
 		label = 'Potassium Salt',

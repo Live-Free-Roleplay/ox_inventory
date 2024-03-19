@@ -204,8 +204,8 @@ return {
 			id = 817, colour = 24, scale = 0.8
 		}, inventory = {
       { name = 'phone', price = 1500 },
-      { name = 'police_radio', price = 400 },
-      { name = 'boombox', price = 500 },
+      { name = 'radio', price = 400 },
+      --{ name = 'boombox', price = 500 },
 		}, locations = {
 			vec3(-1273.20, -1411.75, 4.4),
 			vec3(-1209.35, -1502.93, 4.4)
@@ -272,7 +272,7 @@ return {
       { name = 'taser_cartridge', price = 0 },
       { name = 'WEAPON_NIGHTSTICK', price = 0 },
       { name = 'WEAPON_FLASHLIGHT', price = 0 },
-      { name = 'police_radio', price = 0, metadata = { serial = 'POL'} },
+      { name = 'radio', price = 0, metadata = { serial = 'POL'} },
       { name = 'handcuffs', price = 0 },
       { name = 'bodycam', price = 0 },
       { name = 'uvlight', price = 0 },
@@ -306,7 +306,7 @@ return {
 			{ name = 'medbag', price = 0 },
       { name = 'bandage', price = 0 },
       { name = 'armour', price = 0 },
-      { name = 'police_radio', price = 0, metadata = { serial = 'EMS'} }
+      { name = 'radio', price = 0, metadata = { serial = 'EMS'} }
 		}, locations = {
 			vec3(306.63, -601.44, 43.28-0.95)
       --vec3(306.3687, -601.5139, 43.28406)
