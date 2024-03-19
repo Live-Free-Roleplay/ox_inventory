@@ -525,7 +525,7 @@ return {
 			close = true,
 			description = "As black as the color wheel lets it be",
 			client = {
-					status = { thirst = 280000 },
+					status = { thirst = 280000, drunk = -50000, stress = 30000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'ng_proc_coffee_01a', 
 					pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
@@ -540,7 +540,7 @@ return {
 			close = true,
 			description = "What even is a mocha",
 			client = {
-					status = { thirst = 280000 },
+					status = { thirst = 280000, drunk = -30000, stress = 10000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'ng_proc_coffee_01a', 
 					pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
@@ -555,7 +555,7 @@ return {
 			close = true,
 			description = "That might wake you up a smidge",
 			client = {
-					status = { thirst = 280000 },
+					status = { thirst = 280000, drunk = -40000, stress = 20000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'ng_proc_coffee_01a', 
 					pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
@@ -570,7 +570,7 @@ return {
 			close = true,
 			description = "American coffee, with an o",
 			client = {
-					status = { thirst = 280000 },
+					status = { thirst = 280000, drunk = -45000, stress = 20000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'ng_proc_coffee_01a', 
 					pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
