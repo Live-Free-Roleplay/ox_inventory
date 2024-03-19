@@ -95,10 +95,18 @@ return {
 		blip = {
 			id = 93, colour = 69, scale = 0.8
 		}, inventory = {
-			{ name = 'beer', price = 15 },
-			{ name = 'gin', price = 25 },
-			{ name = 'rum', price = 25 },
-      { name = 'vodka', price = 20 },
+			{ name = 'rancho_beer', price = 10 },
+			{ name = 'dusche_beer', price = 10 },
+			{ name = 'stronzo_beer', price = 10 },
+			{ name = 'patriot_beer', price = 10 },
+			{ name = 'bb_bourgeoix', price = 80 },
+			{ name = 'bb_cariaque', price = 80 },
+			{ name = 'cb_bleuterd', price = 80 },
+			{ name = 'rb_ragga', price = 80 },
+			{ name = 'tb_tequilya', price = 80 },
+			{ name = 'vb_nogo', price = 80 },
+			{ name = 'wb_mount', price = 80 },
+			{ name = 'wb_richards', price = 80 },
 		}, locations = {
 			vec3(1135.808, -982.281, 46.415),
 			vec3(-1222.915, -906.983, 12.326),
