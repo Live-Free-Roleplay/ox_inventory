@@ -1692,7 +1692,7 @@ return {
 
 	['drugtestkit'] = {
 		consume = 0.0,
-		label = 'DNA Field Swab Kit',
+		label = 'Drug Test Kit',
 		weight = 100,
 		stack = true,
 		description = 'A multipanel oral drug test kit like the one your lame dad or boss buys... but for cops.',
