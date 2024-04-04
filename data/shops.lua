@@ -135,8 +135,8 @@ return {
 			{ name = 'digital_scale', price = 8 },
       { name = 'baking_pan', price = 6 },
       { name = 'shredder', price = 20 },
-      { name = 'card_binder', price = 2000 },
-      { name = 'base_set_booster_pack', price = 200 },
+      --{ name = 'card_binder', price = 2000 },
+      --{ name = 'base_set_booster_pack', price = 200 },
 		}, locations = {
 			vec3(53.27,-1479.13,29.28),
 		}, targets = {
