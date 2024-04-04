@@ -2166,7 +2166,7 @@ return {
 		stack = false,
 		consume = 0,
 		client = {
-			export = 'unr3al_backpack.openBackpack_bag1'
+			export = 'unr3al_backpack.openBackpack_bag'
 		}
 	},
 
