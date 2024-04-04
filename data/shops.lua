@@ -169,8 +169,9 @@ return {
 		blip = {
 			id = 402, colour = 69, scale = 0.8
 		}, inventory = {
-			{ name = 'bleach', price = 75 },
-      { name = 'bleachwipes', price = 50 },
+			{ name = 'blox', price = 75 },
+			{ name = 'rag', price = 5 },
+			{ name = 'microfibercloth', price = 10 },
       { name = 'drain_cleaner', price = 75 },
       { name = 'cement_mix', price = 20 },
       { name = 'charcoal', price = 12 },
@@ -213,7 +214,8 @@ return {
 		}, inventory = {
       { name = 'phone', price = 1500 },
       { name = 'radio', price = 400 },
-      --{ name = 'boombox', price = 500 },
+			{ name = 'nikon', price = 1200 },
+			{ name = 'sdcard', price = 100 },
 		}, locations = {
 			vec3(-1273.20, -1411.75, 4.4),
 			vec3(-1209.35, -1502.93, 4.4)
@@ -283,7 +285,6 @@ return {
       { name = 'radio', price = 0, metadata = { serial = 'POL'} },
       { name = 'handcuffs', price = 0 },
       { name = 'bodycam', price = 0 },
-      { name = 'uvlight', price = 0 },
       { name = 'medikit', price = 0 },
       { name = 'bandage', price = 0 },
       { name = 'armour', price = 0 },
@@ -293,6 +294,18 @@ return {
       { name = 'at_clip_extended_pistol', price = 0, grade = 4 },
       { name = 'at_suppressor_light', price = 0, grade = 4 },
       { name = 'spray_remover', price = 0 },
+			{ name = 'empty_evidence_bag', price = 0 },
+			{ name = 'nikon', price = 0 },
+			{ name = 'sdcard', price = 0 },
+			{ name = 'gsrtestkit', price = 0 },
+			{ name = 'dnatestkit', price = 0 },
+			{ name = 'drugtestkit', price = 0 },
+			{ name = 'breathalyzer', price = 0 },
+			{ name = 'fingerprintreader', price = 0 },
+			{ name = 'accesstool', price = 0 },
+			{ name = 'fingerprintkit', price = 0 },
+			{ name = 'mikrosil', price = 0 },
+			{ name = 'fingerprinttape', price = 0 },
 		}, locations = {
 			vec3(482.55, -995.17, 29.69),
       vec3(1837.1809, 3685.2949, 34.1893)

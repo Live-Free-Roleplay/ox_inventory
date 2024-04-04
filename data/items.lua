@@ -1117,21 +1117,7 @@ return {
           usetime = 5000,
       }
   }, 
-  ['uvlight'] = {
-		label = 'UV Light',
-		weight = 95,
-		stack = true
-	},
-	['bleachwipes'] = {
-		label = 'Bleach Wipes',
-		weight = 185,
-		stack = true
-	},
-  ['boombox'] = {
-		label = 'Boombox',
-		weight = 2000,
-		stack = false,
-	},
+
   ['alla_vodka'] = {
 		label = 'Alla Vodka',
 		weight = 500,
@@ -1650,7 +1636,7 @@ return {
   ['filled_evidence_bag'] = {
 		consume = 0.0,
 		label = 'Collected Evidence',
-		weight = 50,
+		weight = 0,
 		stack = false,
 		description = 'This is police evidence.',
 		server = {export = 'r14-evidence.filled_evidence_bag'},
@@ -1660,76 +1646,141 @@ return {
 	['empty_evidence_bag'] = {
 		consume = 0.0,
 		label = 'Empty Evidence Bag',
-		weight = 10,
+		weight = 0,
 		stack = true,
 		description = 'This is an evidence bag.',
 	},
 
 	['nikon'] = {
-		consume = 0,
+		consume = 0.0,
 		label = 'Nikoff G600',
-		weight = 1000,
+		weight = 500,
 		stack = false,
-		description = 'Police evidence, caught in 4k',
+		description = 'Caught in 4k',
 		server = {export = 'r14-evidence.nikon'},
 	},
 
 	['sdcard'] = {
-		consume = 0,
+		consume = 0.0,
 		label = 'SD Card',
-		weight = 60,
+		weight = 100,
 		stack = false,
 		description = 'People still use these??',
 		server = {export = 'r14-evidence.sdcard'},
 	},
 
 	['gsrtestkit'] = {
+		consume = 0.0,
 		label = 'GSR Field Test Kit',
-		weight = 200,
+		weight = 100,
 		stack = true,
 		close = true,
-		description = "A field GSR test kit containing several test strips"
+		description = "A field GSR test kit containing several test strips",
+		server = {export = 'r14-evidence.gsrtestkit'},
 	},
 
 	['dnatestkit'] = {
+		consume = 0.0,
 		label = 'DNA Field Swab Kit',
-		weight = 200,
+		weight = 100,
 		stack = true,
 		close = true,
-		description = "A field DNA swab kit containing several vials and swabs"
+		description = "A field DNA swab kit containing several vials and swabs",
+		server = {export = 'r14-evidence.dnatestkit'},
 	},
 
 
 	['drugtestkit'] = {
+		consume = 0.0,
 		label = 'DNA Field Swab Kit',
-		weight = 200,
+		weight = 100,
 		stack = true,
 		description = 'A multipanel oral drug test kit like the one your lame dad or boss buys... but for cops.',
+		server = {export = 'r14-evidence.drugtestkit'},
 	},
 
 	['breathalyzer'] = {
+		consume = 0.0,
 		label = 'Breathalyzer',
-		weight = 750,
+		weight = 200,
 		stack = true,
 		close = true,
-		description = "A vintage 2000's breathalyzer engraved Property of LSPD"
+		description = "A vintage 2000's WiWang breathalyzer engraved Property of LSPD",
+		server = {export = 'r14-evidence.breathalyzer'},
 	},
 
 	['fingerprintreader'] = {
+		consume = 0.0,
 		label = 'Pro Tech XFR8001',
-		weight = 800,
+		weight = 200,
 		stack = false,
 		close = true,
-		description = "A Pro Tech mobile fingerprint reader that looks like it's seen better days."
+		description = "A Pro Tech mobile fingerprint reader that looks like it's seen better days, currently stuck in french.",
+		server = {export = 'r14-evidence.fingerprintreader'},
 	},
 
 	['accesstool'] = {
-		consume = 0,
+		consume = 0.0,
 		label = 'Access Tool',
-		weight = 700,
+		weight = 200,
 		stack = false,
 		description = 'Snap into an access tool.',
-		server = {export = 'r14-evidence.accesstool',},
+		server = {export = 'r14-evidence.accesstool'},
+	},
+
+	['fingerprintkit'] = {
+		consume = 0.0,
+		label = 'Fingerprint Kit',
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "A small kit that includes fingerprint dust, chemicals, and a brush for developing fingerprints",
+	},
+
+	['mikrosil'] = {
+		consume = 0.0,
+		label = 'Mikrosil',
+		weight = 200,
+		stack = true,
+		close = true,
+		description = "Two tubes of silicon casting material used to lift fingerprints from irregular surfaces",
+	},
+
+	['fingerprinttape'] = {
+		consume = 0.0,
+		label = 'Fingerprint Tape',
+		weight = 200,
+		stack = true,
+		close = true,
+		description = "Extra clear tape used to lift fingerprints from smooth, nonporous surfaces",
+	},
+
+	['blox'] = {
+		consume = 0.0,
+		label = 'Blox Multisurface',
+		weight = 200,
+		stack = true,
+		close = true,
+		description = 'Kills everything!',
+	},
+
+	['microfibercloth'] = {
+		consume = 0.0,
+		label = 'Microfiber Cloth',
+		weight = 200,
+		stack = true,
+		description = 'Polyester, but fluffy',
+		server = {export = 'r14-evidence.microfibercloth'},
+		allowArmed = true,
+	},
+
+	['rag'] = {
+		consume = 0.0,
+		label = 'Rag',
+		weight = 100,
+		stack = true,
+		description = 'Cheap rag',
+		allowArmed = true,
 	},
   
   ['spray'] = {
@@ -3004,14 +3055,6 @@ return {
 
 	['beer'] = {
 		label = 'Beer',
-		weight = 250,
-		stack = true,
-		close = true,
-		description = nil
-	},
-
-	['bleach'] = {
-		label = 'Bleach',
 		weight = 250,
 		stack = true,
 		close = true,
