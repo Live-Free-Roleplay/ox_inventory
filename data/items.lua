@@ -3271,7 +3271,7 @@ return {
 		close = true,
 		consume = 0.1,
 		server = {
-			export = "rob_atm.use_item_drill"
+			export = "rob_atm.use_item_dhandledrill"
 		}
   },
 
