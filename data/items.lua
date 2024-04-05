@@ -3259,19 +3259,20 @@ return {
     weight = 500,
     stack = true,
     close = true,
-    client = {
-        export = "rob_atm.rope"
-    }
+    server = {
+			export = "rob_atm.use_item_rope"
+		}
   },
+	
   ["dhandledrill"] = {
-      label = "D-Handle Drill",
-      weight = 2500,
-      stack = true,
-      close = true,
-      consume = 0,
-      client = {
-          export = "rob_atm.drill"
-      }
+		label = "D-Handle Drill",
+		weight = 2500,
+		stack = false,
+		close = true,
+		consume = 0.1,
+		server = {
+			export = "rob_atm.use_item_drill"
+		}
   },
 
 	['evidencebag'] = {
