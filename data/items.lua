@@ -3868,9 +3868,9 @@ return {
 		description = nil
 	},
 
-	['jailcigarette'] = {
-		label = 'Jail cigarette',
-		weight = 200,
+	['cigarette'] = {
+		label = 'Cigarette',
+		weight = 50,
 		stack = true,
 		close = true,
 		description = nil
