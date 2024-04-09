@@ -1098,7 +1098,7 @@ return {
           rot = vec3(0.00, 0.00, 90.00), 
           bone = 56604  },
           disable = { move = false, car = false, combat = false },
-          usetime = 5000,
+          usetime = 2500,
       }
   }, 
   ['ammobox-9'] = { -- idea: Player uses item to show badge prop
@@ -1114,7 +1114,7 @@ return {
           rot = vec3(0.00, 0.00, 90.00), 
           bone = 56604  },
           disable = { move = false, car = false, combat = false },
-          usetime = 5000,
+          usetime = 2500,
       }
   }, 
 
