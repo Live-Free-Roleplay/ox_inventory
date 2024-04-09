@@ -468,15 +468,17 @@ end
 -- end)
 
 -----------------------------------------------------------------------------------------------
-Item('ammobox-9', function(event, item, inventory, data, slot)
+exports('ammobox-9', function(event, item, inventory, slot, data)
+	-- Player has finished using the item.
 	if event == 'usedItem' then
-    	Inventory.AddItem(inventory, 'ammo-9', 25)
+		Inventory.AddItem(inventory, 'ammo-9', 25)
 	end
 end)
 
-Item('ammobox-45', function(event, item, inventory, data, slot)
+exports('ammobox-45', function(event, item, inventory, slot, data)
+	-- Player has finished using the item.
 	if event == 'usedItem' then
-    	Inventory.AddItem(inventory, 'ammo-45', 25)
+		Inventory.AddItem(inventory, 'ammo-45', 25)
 	end
 end)
 
