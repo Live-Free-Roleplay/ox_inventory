@@ -69,18 +69,20 @@ end
 ---@return boolean
 local function canOpenTarget(ped)
 	local player = NetworkGetPlayerIndexFromPed(ped)
-  local playerID = GetPlayerServerId(player)
-  return IsPedFatallyInjured(ped)
-  or Player(playerID).state.dead
+	local playerID = GetPlayerServerId(player)
+	return IsPedFatallyInjured(ped)
+	or Player(playerID).state.dead
 	or IsEntityPlayingAnim(ped, 'dead', 'dead_a', 3)
 	or IsPedCuffed(ped)
 	or IsEntityPlayingAnim(ped, 'mp_arresting', 'idle', 3)
 	or IsEntityPlayingAnim(ped, 'missminuteman_1ig_2', 'handsup_base', 3)
 	or IsEntityPlayingAnim(ped, 'missminuteman_1ig_2', 'handsup_enter', 3)
-	or IsEntityPlayingAnim(ped, 'mini@cpr@char_b@cpr_def', 'cpr_pumpchest_idle', 3)
-	or IsEntityPlayingAnim(ped, 'mp_am_hold_up', 'handsup_base', 49)
 	or IsEntityPlayingAnim(ped, 'random@mugging3', 'handsup_standing_base', 3)
-end
+	or IsEntityPlayingAnim(ped, 'mini@cpr@char_b@cpr_def', 'cpr_pumpchest_idle', 3)
+	or IsEntityPlayingAnim(ped, 'cpr_pumpchest_idle', 'cpr_pumpchest_idle', 3)
+	or IsEntityPlayingAnim(ped, 'combat@damage@writhe', 'writhe_loop', 3)
+	or IsEntityPlayingAnim(ped, 'veh@bus@passenger@common@idle_duck', 'sit', 3)
+end 
 
 local defaultInventory = {
 	type = 'newdrop',
