@@ -306,6 +306,7 @@ return {
 			{ name = 'fingerprintkit', price = 0 },
 			{ name = 'mikrosil', price = 0 },
 			{ name = 'fingerprinttape', price = 0 },
+			{ name = 'police_stormram', price = 0 },
 		}, locations = {
 			vec3(482.55, -995.17, 29.69),
       vec3(1837.1809, 3685.2949, 34.1893)

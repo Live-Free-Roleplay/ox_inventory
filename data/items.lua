@@ -1782,6 +1782,15 @@ return {
 		description = 'Cheap rag',
 		allowArmed = true,
 	},
+
+	['police_stormram'] = {
+		consume = 0.0,
+		label = 'Police Storm Ram',
+		weight = 3000,
+		stack = true,
+		description = 'For ramming through house doors',
+		allowArmed = true,
+	},
   
   ['spray'] = {
 		label = 'Spray',
@@ -4382,6 +4391,104 @@ return {
 	["WEAPON_DIGISCANNER"] = {
 		label = "Digiscanner",
 		weight = 300,
+		stack = true,
+		close = true,
+	},
+
+	["empty_weed_bag"] = {
+		label = "Empty Bag",
+		weight = 60,
+		stack = true,
+		close = true,
+	},
+
+	["weed_ak47"] = {
+		label = "Ak74",
+		weight = 200,
+		stack = true,
+		close = true,
+	},
+
+	["weed_ak47_seed"] = {
+		label = "ak47 Seed",
+		weight = 10,
+		stack = true,
+		close = true,
+	},
+
+	["weed_amnesia"] = {
+		label = "Amnesia",
+		weight = 200,
+		stack = true,
+		close = true,
+	},
+
+	["weed_amnesia_seed"] = {
+		label = "Amnesia Seed",
+		weight = 10,
+		stack = true,
+		close = true,
+	},
+
+	["weed_nutrition"] = {
+		label = "Weed Nutrition",
+		weight = 500,
+		stack = true,
+		close = true,
+	},
+
+	["weed_og-kush"] = {
+		label = "OG Kush",
+		weight = 200,
+		stack = true,
+		close = true,
+	},
+
+	["weed_og-kush_seed"] = {
+		label = "OG Kush Seed",
+		weight = 10,
+		stack = true,
+		close = true,
+	},
+
+	["weed_purple-haze"] = {
+		label = "Purple Haze",
+		weight = 200,
+		stack = true,
+		close = true,
+	},
+
+	["weed_purple-haze_seed"] = {
+		label = "Purple Haze Seed",
+		weight = 10,
+		stack = true,
+		close = true,
+	},
+
+	["weed_skunk"] = {
+		label = "Skunk",
+		weight = 200,
+		stack = true,
+		close = true,
+	},
+
+	["weed_skunk_seed"] = {
+		label = "Skunk Seed",
+		weight = 10,
+		stack = true,
+		close = true,
+	},
+
+	["weed_white-widow"] = {
+		label = "White Widow",
+		weight = 200,
+		stack = true,
+		close = true,
+	},
+
+	["weed_white-widow_seed"] = {
+		label = "White Widow Seed",
+		weight = 10,
 		stack = true,
 		close = true,
 	},
