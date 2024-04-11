@@ -1,4 +1,59 @@
 return {
+	['warehouse_key'] = {
+		label = 'Warehouse Key',
+		weight = 25,
+	},
+
+	['uncounted_money'] = {
+		label = 'Uncounted Money',
+	},
+
+	-- Add items into ox_inventory/data/items.lua
+	['auto_parts'] = {
+		label = 'Auto Parts',
+		weight = 5,
+	},
+
+	['chop_torch'] = {
+		label = 'Torch',
+		weight = 275,
+	},
+
+	['chop_lugwrench'] = {
+		label = 'Lug Wrench',
+		weight = 225,
+	},
+
+	['iron'] = {
+		label = 'Iron',
+		weight = 50,
+	},
+	['aluminum'] = {
+		label = 'Aluminum',
+		weight = 50,
+	},
+	['plastic'] = {
+		label = 'Plastic',
+		weight = 50,
+	},
+	['steel'] = {
+		label = 'Steel',
+		weight = 50,
+	},
+	['rubber'] = {
+		label = 'Rubber',
+		weight = 50,
+	},
+	['copper'] = {
+		label = 'Copper',
+		weight = 50,
+	},
+	['glass'] = {
+		label = 'Glass',
+		weight = 50,
+	},
+
+
 	['sandwich'] = { -- A simple sandwich for a simple day
 			label = 'Sandwich',
 			weight = 350,
