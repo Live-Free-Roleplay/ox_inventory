@@ -53,6 +53,11 @@ return {
 		weight = 50,
 	},
 
+	['recycler_bag'] = {
+		label = 'Bag of Recycling',
+		weight = 500,
+	},
+
 
 	['sandwich'] = { -- A simple sandwich for a simple day
 			label = 'Sandwich',
