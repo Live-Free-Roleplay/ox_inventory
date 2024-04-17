@@ -2273,14 +2273,12 @@ return {
 		label = 'Zip Tie',
 		weight = 50,
 		stack = true,
-    consume = 1,
 	},
 
 	['paperbag'] = {
 		label = 'Paper Bag',
 		weight = 100,
 		stack = true,
-    consume = 1,
 	},
 
 	['identification'] = {
