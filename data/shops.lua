@@ -16,7 +16,7 @@ return {
 		}, locations = {
 			vec3(380.9217, -1595.4905, 30.0514),
 		}, targets = {
-			{ loc = vec3(380.9217, -1595.4905, 30.0514), length = 2.7, width = 2.5, heading = 227.3182, minZ = 55.5, maxZ = 57.9, distance = 1.5 },
+			{ loc = vec3(380.9217, -1595.4905, 30.0514), length = 2.7, width = 2.5, heading = 227.3182, minZ = 55.5, maxZ = 57.9, distance = 2.5 },
 		}
 	},
   
@@ -30,7 +30,7 @@ return {
 		}, locations = {
 			vec3(-1347.4512, 141.9484, 56.4430),
 		}, targets = {
-			{ loc = vec3(-1347.4512, 141.9484, 56.4430), length = 2.7, width = 2.5, heading = 340.6778, minZ = 55.5, maxZ = 57.9, distance = 1.5 },
+			{ loc = vec3(-1347.4512, 141.9484, 56.4430), length = 2.7, width = 2.5, heading = 340.6778, minZ = 55.5, maxZ = 57.9, distance = 2.5 },
 		}
 	},
   
@@ -76,17 +76,17 @@ return {
 			vec3(373.55, 325.56, 103.56),--
       vec3(-48.24, -1757.85, 29.41),--
 		}, targets = {
-			{ loc = vec3(25.06, -1347.32, 29.5), length = 2.7, width = 2.5, heading = 0.0, minZ = 28.5, maxZ = 29.9, distance = 1.5 },
-			{ loc = vec3(-3039.18, 585.13, 7.91), length = 2.6, width = 2.5, heading = 15.0, minZ = 6.91, maxZ = 8.31, distance = 1.5 },
-			{ loc = vec3(-3242.2, 1000.58, 12.83), length = 2.6, width = 2.6, heading = 175.0, minZ = 11.83, maxZ = 13.23, distance = 1.5 },
-			{ loc = vec3(1728.39, 6414.95, 35.04), length = 2.6, width = 2.6, heading = 65.0, minZ = 34.04, maxZ = 35.44, distance = 1.5 },
-			{ loc = vec3(1698.37, 4923.43, 42.06), length = 2.5, width = 2.5, heading = 235.0, minZ = 41.06, maxZ = 42.46, distance = 1.5 },
-			{ loc = vec3(1960.54, 3740.28, 32.34), length = 2.6, width = 2.5, heading = 120.0, minZ = 31.34, maxZ = 32.74, distance = 1.5 },
-			{ loc = vec3(548.5, 2671.25, 42.16), length = 2.6, width = 2.5, heading = 10.0, minZ = 41.16, maxZ = 42.56, distance = 1.5 },
-			{ loc = vec3(2678.29, 3279.94, 55.24), length = 2.6, width = 2.5, heading = 330.0, minZ = 54.24, maxZ = 55.64, distance = 1.5 },
-			{ loc = vec3(2557.19, 381.4, 108.62), length = 2.6, width = 2.5, heading = 0.0, minZ = 107.62, maxZ = 109.02, distance = 1.5 },
-			{ loc = vec3(373.13, 326.29, 103.57), length = 2.6, width = 2.5, heading = 345.0, minZ = 102.57, maxZ = 103.97, distance = 1.5 },
-      { loc = vec3(-48.24, -1757.85, 29.41), length = 2.6, width = 2.5, heading = 235.27, minZ = 28.41, maxZ = 30.41, distance = 1.5 },
+			{ loc = vec3(25.06, -1347.32, 29.5), length = 2.7, width = 2.5, heading = 0.0, minZ = 28.5, maxZ = 29.9, distance = 2.5 },
+			{ loc = vec3(-3039.18, 585.13, 7.91), length = 2.6, width = 2.5, heading = 15.0, minZ = 6.91, maxZ = 8.31, distance = 2.5 },
+			{ loc = vec3(-3242.2, 1000.58, 12.83), length = 2.6, width = 2.6, heading = 175.0, minZ = 11.83, maxZ = 13.23, distance = 2.5 },
+			{ loc = vec3(1728.39, 6414.95, 35.04), length = 2.6, width = 2.6, heading = 65.0, minZ = 34.04, maxZ = 35.44, distance = 2.5 },
+			{ loc = vec3(1698.37, 4923.43, 42.06), length = 2.5, width = 2.5, heading = 235.0, minZ = 41.06, maxZ = 42.46, distance = 2.5 },
+			{ loc = vec3(1960.54, 3740.28, 32.34), length = 2.6, width = 2.5, heading = 120.0, minZ = 31.34, maxZ = 32.74, distance = 2.5 },
+			{ loc = vec3(548.5, 2671.25, 42.16), length = 2.6, width = 2.5, heading = 10.0, minZ = 41.16, maxZ = 42.56, distance = 2.5 },
+			{ loc = vec3(2678.29, 3279.94, 55.24), length = 2.6, width = 2.5, heading = 330.0, minZ = 54.24, maxZ = 55.64, distance = 2.5 },
+			{ loc = vec3(2557.19, 381.4, 108.62), length = 2.6, width = 2.5, heading = 0.0, minZ = 107.62, maxZ = 109.02, distance = 2.5 },
+			{ loc = vec3(373.13, 326.29, 103.57), length = 2.6, width = 2.5, heading = 345.0, minZ = 102.57, maxZ = 103.97, distance = 2.5 },
+      { loc = vec3(-48.24, -1757.85, 29.41), length = 2.6, width = 2.5, heading = 235.27, minZ = 28.41, maxZ = 30.41, distance = 2.5 },
 		}
 	},--]]
 
@@ -116,12 +116,12 @@ return {
 			vec3(1392.562, 3604.684, 34.980),--
 			vec3(-1393.409, -606.624, 30.319)
 		}, targets = {
-			{ loc = vec3(1134.9, -982.34, 46.41), length = 2.5, width = 2.5, heading = 96.0, minZ = 45.4, maxZ = 46.8, distance = 1.5 },
-			{ loc = vec3(-1222.33, -907.82, 12.43), length = 2.6, width = 2.5, heading = 32.7, minZ = 11.3, maxZ = 12.7, distance = 1.5 },
-			{ loc = vec3(-1486.67, -378.46, 40.26), length = 2.6, width = 2.5, heading = 133.77, minZ = 39.1, maxZ = 40.5, distance = 1.5 },
-			{ loc = vec3(-2967.0, 390.9, 15.14), length = 2.7, width = 2.5, heading = 85.23, minZ = 14.0, maxZ = 15.4, distance = 1.5 },
-			{ loc = vec3(1165.95, 2710.20, 38.26), length = 2.6, width = 2.5, heading = 178.84, minZ = 37.1, maxZ = 38.5, distance = 1.5 },
-			{ loc = vec3(1393.0, 3605.95, 35.11), length = 2.6, width = 2.6, heading = 200.0, minZ = 34.0, maxZ = 35.4, distance = 1.5 }
+			{ loc = vec3(1134.9, -982.34, 46.41), length = 2.5, width = 2.5, heading = 96.0, minZ = 45.4, maxZ = 46.8, distance = 2.5 },
+			{ loc = vec3(-1222.33, -907.82, 12.43), length = 2.6, width = 2.5, heading = 32.7, minZ = 11.3, maxZ = 12.7, distance = 2.5 },
+			{ loc = vec3(-1486.67, -378.46, 40.26), length = 2.6, width = 2.5, heading = 133.77, minZ = 39.1, maxZ = 40.5, distance = 2.5 },
+			{ loc = vec3(-2967.0, 390.9, 15.14), length = 2.7, width = 2.5, heading = 85.23, minZ = 14.0, maxZ = 15.4, distance = 2.5 },
+			{ loc = vec3(1165.95, 2710.20, 38.26), length = 2.6, width = 2.5, heading = 178.84, minZ = 37.1, maxZ = 38.5, distance = 2.5 },
+			{ loc = vec3(1393.0, 3605.95, 35.11), length = 2.6, width = 2.6, heading = 200.0, minZ = 34.0, maxZ = 35.4, distance = 2.5 }
 		}
 	},
   
@@ -140,7 +140,7 @@ return {
 		}, locations = {
 			vec3(53.27,-1479.13,29.28),
 		}, targets = {
-			{ loc = vec3(53.27,-1479.13,29.28), length = 2.5, width = 2.5, heading = 96.0, minZ = 27.28, maxZ = 31.28, distance = 1.5 },
+			{ loc = vec3(53.27,-1479.13,29.28), length = 2.5, width = 2.5, heading = 96.0, minZ = 27.28, maxZ = 31.28, distance = 3.5 },
 		}
 	},
   
@@ -207,10 +207,10 @@ return {
       { name = 'car_wax_premium', price = 125 },
 		}, locations = {
 			vec3(-3153.87,1053.78,20.86),
-			vec3(-11.13,6499.44,31.5)
+			vec3(-11.13,6499.44,32.5)
 		}, targets = {
 			{ loc = vec3(-3153.87,1053.78,20.86), length = 2.6, width = 3.0, heading = 65.0, minZ = 18.86, maxZ = 22.86, distance = 3.0 },
-      { loc = vec3(-11.13,6499.44,31.5), length = 2.6, width = 3.0, heading = 65.0, minZ = 29.5, maxZ = 33.5, distance = 3.0 }
+      { loc = vec3(-11.13,6499.44,32.5), length = 2.6, width = 3.0, heading = 65.0, minZ = 29.5, maxZ = 33.5, distance = 3.0 }
 		}
 	},
   
@@ -337,7 +337,7 @@ return {
       { name = 'radio', price = 0, metadata = { serial = 'EMS'} }
 		}, locations = {
 			vec3(306.63, -601.44, 43.28-0.95)
-      --vec3(306.3687, -601.5139, 43.28406)
+      --vec3(306.3687, -602.5139, 43.28406)
 		}, targets = {
       { loc = vec3(306.63, -601.44, 43.28-0.95), length = 3.0, width = 3.0, heading = 174.86, minZ = 41.0, maxZ = 44.0, distance = 6 }
 		}
