@@ -165,18 +165,18 @@ return {
 	},
 
 	['burger'] = { -- A test hamburger that you can eat
-			label = 'Hamburger',
-			weight = 350,
-			stack = true,
-			close = true,
-			description = "A hamburger that you can eat",
-			client = {
-					status = { hunger = 230000 },
-					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
-					prop = { model = 'prop_cs_burger_01', 
-					pos = vec3(0.05, -0.02, -0.03), rot = vec3(150.0, 340.0, 170.0) },
-					usetime = 7500,
-			},
+		label = 'Hamburger',
+		weight = 350,
+		stack = true,
+		close = true,
+		description = "A hamburger that you can eat",
+		client = {
+				status = { hunger = 230000 },
+				anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+				prop = { model = 'prop_cs_burger_01', 
+				pos = vec3(0.05, -0.02, -0.03), rot = vec3(150.0, 340.0, 170.0) },
+				usetime = 7500,
+		},
 	},
 
 	['burger_chs'] = { -- A test hamburger that you can eat
@@ -3474,10 +3474,17 @@ return {
 
 	['hamburger'] = {
 		label = 'Hamburger',
-		weight = 250,
+		weight = 350,
 		stack = true,
 		close = true,
-		description = nil
+		description = "A hamburger that you can eat",
+		client = {
+				status = { hunger = 230000 },
+				anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+				prop = { model = 'prop_cs_burger_01', 
+				pos = vec3(0.05, -0.02, -0.03), rot = vec3(150.0, 340.0, 170.0) },
+				usetime = 7500,
+		},
 	},
 
 	['herion_baggie'] = {
