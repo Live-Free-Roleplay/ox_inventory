@@ -205,6 +205,7 @@ return {
       { name = 'fixkit', price = 500 },
       { name = 'car_wax', price = 75 },
       { name = 'car_wax_premium', price = 125 },
+			{ name = 'duct_tape', price = 200 },
 		}, locations = {
 			vec3(-3153.87,1053.78,20.86),
 			vec3(-11.13,6499.44,32.5)

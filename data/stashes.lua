@@ -50,6 +50,48 @@ return {
 		groups = shared.police
 	},
 
+	{
+		coords = vec3(-341.97, -122.95, 39.01),
+		target = {
+			loc = vec3(-341.97, -122.95, 39.01),
+			length = 5.2,
+			width = 5.6,
+			heading = 343.48,
+			minZ = 39.01-0.5,
+			maxZ = 39.01+0.5,
+			label = 'Mechanic Storage'
+		},
+		name = 'lsc_storage',
+		label = 'Mechanic Storage',
+		owner = false,
+		slots = 100,
+		weight = 1000000,
+		groups = {
+			['mechanic_lsc'] = 0,
+		}
+	},
+
+	{
+		coords = vec3(838.98, -825.9, 26.33),
+		target = {
+			loc = vec3(838.98, -825.9, 26.33),
+			length = 5.2,
+			width = 5.6,
+			heading = 99.86,
+			minZ = 26.33-0.5,
+			maxZ = 26.33+0.5,
+			label = 'Mechanic Storage'
+		},
+		name = 'otto_storage',
+		label = 'Mechanic Storage',
+		owner = false,
+		slots = 100,
+		weight = 1000000,
+		groups = {
+			['mechanic_ottos'] = 0,
+		}
+	},
+
 	--[[{
 		coords = vec3(301.3, -600.23, 43.28),
 		target = {
