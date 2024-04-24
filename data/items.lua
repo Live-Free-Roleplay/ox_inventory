@@ -1,4 +1,8 @@
 return {
+	["weaponrepairkit"] = {
+    label = "Weapon Repair Kit",
+    weight = 500
+  },
 	["engine_oil"] = {
     label = "Engine Oil",
     weight = 1000,
