@@ -91,7 +91,7 @@ Item('taser_cartridge', function(data, slot)
     TriggerServerEvent('TaserFramework:ReloadTaser', GetPlayerServerId(PlayerId()))
 end)
 
-Item('bandage', function(data, slot)
+--[[Item('bandage', function(data, slot)
 	local maxHealth = GetEntityMaxHealth(cache.ped)
 	local health = GetEntityHealth(cache.ped)
 	ox_inventory:useItem(data, function(data)
@@ -100,7 +100,7 @@ Item('bandage', function(data, slot)
 			lib.notify({ description = 'You feel better already' })
 		end
 	end)
-end)
+end)--]]
 
 Item('armour', function(data, slot)
 	if GetPedArmour(cache.ped) < 100 then
