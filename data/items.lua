@@ -1,4 +1,40 @@
 return {
+	["toolbox"] = {
+    label = "Toolbox",
+    weight = 500,
+		stack = true,
+		close = true,
+		description = nil
+  },
+	["wire_cutters"] = {
+    label = "Wire Cutters",
+    weight = 200,
+		stack = true,
+		close = true,
+		description = nil
+  },
+  ["screwdriver"] = {
+    label = "Screwdriver",
+    weight = 200,
+		stack = true,
+		close = true,
+		description = nil
+  },
+  ["file"] = {
+    label = "Metal File",
+    weight = 200,
+		stack = true,
+		close = true,
+		description = nil
+  },
+	['pliers'] = {
+		label = 'Pliers',
+		weight = 200,
+		stack = true,
+		close = true,
+		description = nil
+	},
+
 	["weaponrepairkit"] = {
     label = "Weapon Repair Kit",
     weight = 500
@@ -569,31 +605,31 @@ return {
 
 	['iron'] = {
 		label = 'Iron',
-		weight = 50,
+		weight = 100,
 	},
 	['aluminum'] = {
 		label = 'Aluminum',
-		weight = 50,
+		weight = 100,
 	},
 	['plastic'] = {
 		label = 'Plastic',
-		weight = 50,
+		weight = 100,
 	},
 	['steel'] = {
 		label = 'Steel',
-		weight = 50,
+		weight = 100,
 	},
 	['rubber'] = {
 		label = 'Rubber',
-		weight = 50,
+		weight = 100,
 	},
 	['copper'] = {
 		label = 'Copper',
-		weight = 50,
+		weight = 100,
 	},
 	['glass'] = {
 		label = 'Glass',
-		weight = 50,
+		weight = 100,
 	},
 
 	['recycler_bag'] = {
@@ -2536,58 +2572,37 @@ return {
 		description = 'Police Bodycamera',
 	},
   
-  ['copper'] = {
-		label = 'Copper',
-		weight = 750,
-		stack = true,
-		close = false,
-	},
-  
   ['black_diamond'] = {
 		label = 'Cut Diamond',
-		weight = 200,
+		weight = 100,
 		stack = true,
 		close = false,
 	},
 
 	['diamond'] = {
 		label = 'Uncut Diamonds',
-		weight = 250,
+		weight = 100,
 		stack = true,
 		close = false,
 	},
   
   ['gold_bar'] = {
 		label = 'Gold Bar',
-		weight = 400,
+		weight = 150,
 		stack = true,
 		close = false,
 	},
 
 	['gold'] = {
 		label = 'Gold Nuggets',
-		weight = 250,
-		stack = true,
-		close = false,
-	},
-
-	['iron'] = {
-		label = 'Iron',
-		weight = 450,
-		stack = true,
-		close = false,
-	},
-
-	['steel'] = {
-		label = 'Steel',
-		weight = 470,
+		weight = 80,
 		stack = true,
 		close = false,
 	},
 
 	['emerald'] = {
 		label = 'Emerald',
-		weight = 220,
+		weight = 75,
 		stack = true,
 		close = false,
 	},
@@ -2797,15 +2812,7 @@ return {
 		close = true,
 		description = nil
 	},
-
-	['aluminum'] = {
-		label = 'Aluminum',
-		weight = 750,
-		stack = true,
-		close = true,
-		description = nil
-	},
-
+	
 	['ammonium_nitrate'] = {
 		label = 'Ammonium Nitrate',
 		weight = 250,
@@ -4075,14 +4082,6 @@ return {
 		stack = true,
 		close = true,
 		description = nil,
-	},
-
-	['pliers'] = {
-		label = 'Pliers',
-		weight = 1000,
-		stack = true,
-		close = true,
-		description = nil
 	},
 
 	['police_key'] = {
