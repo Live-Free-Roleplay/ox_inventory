@@ -61,13 +61,13 @@ setContainerProperties('pizzabox', {
 	slots = 5,
 	maxWeight = 1000,
 	whitelist = { 'pizza' }
-})--]]
+})
 
 setContainerProperties('bag', {
 	slots = 30,
 	maxWeight = 75000,
 	blacklist = { 'bag' }
-})
+})--]]
 
 setContainerProperties('card_binder', {
 	slots = 100,
