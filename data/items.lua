@@ -1,37 +1,73 @@
 return {
+	["electrical_kit"] = {
+    label = "Electrical Kit",
+    weight = 200,
+		stack = true,
+		description = nil
+  },
+	["explosive_compound"] = {
+    label = "Explosive Compound",
+    weight = 100,
+		stack = true,
+		description = nil
+  },
 	["toolbox"] = {
     label = "Toolbox",
-    weight = 500,
+    weight = 750,
 		stack = true,
 		close = true,
+		description = "A toolbox with some tools in it",
+		client = {
+			anim = { dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@', 
+			clip = 'machinic_loop_mechandplayer', flag = 3 },
+			prop = { model = 'v_ind_cs_toolbox4', -- need badge props repo
+			pos = vec3(0.0, 1.0, -0.05), 
+			rot = vec3(0.00, 0.00, 0.00), 
+			bone = 56604  },
+			disable = { move = false, car = false, combat = false },
+			usetime = 2500,
+		}
+  },
+	["electric_motor"] = {
+    label = "Electric Motor",
+    weight = 200,
+		stack = true,
 		description = nil
   },
 	["wire_cutters"] = {
     label = "Wire Cutters",
-    weight = 200,
+    weight = 150,
 		stack = true,
-		close = true,
 		description = nil
   },
   ["screwdriver"] = {
     label = "Screwdriver",
-    weight = 200,
+    weight = 150,
 		stack = true,
-		close = true,
 		description = nil
   },
   ["file"] = {
     label = "Metal File",
-    weight = 200,
+    weight = 150,
 		stack = true,
-		close = true,
 		description = nil
   },
 	['pliers'] = {
 		label = 'Pliers',
+		weight = 150,
+		stack = true,
+		description = nil
+	},
+	['iron_oxide'] = {
+		label = 'Iron Oxide',
+		weight = 100,
+		stack = true,
+		description = nil
+	},
+	['circuit_board'] = {
+		label = 'Circuit Board',
 		weight = 200,
 		stack = true,
-		close = true,
 		description = nil
 	},
 

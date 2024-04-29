@@ -480,4 +480,13 @@ Item('ammobox-45', function(event, item, inventory, slot, data)
  end
 end)
 
+Item('toolbox', function(event, item, inventory, slot, data)
+	if event == 'usedItem' then
+	 Inventory.AddItem(inventory, 'wire_cutters', 1)
+	 Inventory.AddItem(inventory, 'screwdriver', 1)
+	 Inventory.AddItem(inventory, 'file', 1)
+	 Inventory.AddItem(inventory, 'pliers', 1)
+ end
+end)
+
 return Items
