@@ -15,7 +15,7 @@ local Inventory = require 'modules.inventory.server'
 require 'modules.crafting.server'
 require 'modules.shops.server'
 
-exports.ox_inventory:registerHook('swapItems', function(payload)
+--[[exports.ox_inventory:registerHook('swapItems', function(payload)
 		local inventory = Inventory(payload.source)
     local toSlotFin = payload.toSlot
     if type(payload.toSlot) == "table" then
@@ -41,7 +41,7 @@ exports.ox_inventory:registerHook('swapItems', function(payload)
     else
       return true
     end
-end)
+end)--]]
 
 ---@param player table
 ---@param data table?
