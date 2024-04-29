@@ -16,6 +16,7 @@ return {
     weight = 750,
 		stack = true,
 		close = true,
+		consume = 1,
 		description = "A toolbox with some tools in it",
 		client = {
 			anim = { dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@', 
