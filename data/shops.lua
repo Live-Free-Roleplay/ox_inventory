@@ -190,7 +190,6 @@ return {
       { name = 'drill', price = 1500 },
       { name = 'rope', price = 100 },
       { name = 'bag', price = 400 },
-      { name = 'lockpick', price = 400 },
       { name = 'fishingrod', price = 250 },
       { name = 'fishbait', price = 25 },
       { name = 'paperbag', price = 20 },
