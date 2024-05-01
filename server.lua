@@ -43,6 +43,24 @@ require 'modules.shops.server'
     end
 end)--]]
 
+exports.ox_inventory:registerHook('swapItems', 
+	function(payload)
+		TriggerClientEvent('ox_lib:notify', payload.source, {
+			title = 'Not Allowed',
+			description = 'You can not store a bag.',
+			type = 'error'
+		})
+		return false
+	end, {
+		itemFilter = {
+				bag = true,
+		},
+		inventoryFilter = {
+				'^STORAGE_UNIT_[%w]+',
+		}
+	}
+)
+
 ---@param player table
 ---@param data table?
 --- player requires source, identifier, and name
