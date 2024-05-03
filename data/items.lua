@@ -1,4 +1,50 @@
 return {
+	["windshield"] = {
+    label = "Windshield",
+    weight = 500,
+		stack = true
+  },
+	["old_tire"] = {
+    label = "Old Tire",
+    weight = 500,
+		stack = true
+  },
+	["car_rim"] = {
+    label = "Car Rim",
+    weight = 300,
+		stack = true
+  },
+	["car_door"] = {
+    label = "Car Door",
+    weight = 500,
+		stack = true
+  },
+	["steering_wheel"] = {
+    label = "Steering Wheel",
+    weight = 500,
+		stack = true
+  },
+	["car_dashboard"] = {
+    label = "Car Dashboard",
+    weight = 1000,
+		stack = true
+  },
+	["metal_sheet"] = {
+    label = "Metal Sheet",
+    weight = 650,
+		stack = true
+  },
+	["rusty_gear"] = {
+    label = "Rusty Gear",
+    weight = 200,
+		stack = true
+  },
+	["pipe"] = {
+    label = "Pipe",
+    weight = 150,
+		stack = true
+  },
+
 	["electrical_kit"] = {
     label = "Electrical Kit",
     weight = 200,
