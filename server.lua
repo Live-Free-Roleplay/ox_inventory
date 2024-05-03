@@ -57,6 +57,7 @@ exports.ox_inventory:registerHook('swapItems',
 		},
 		inventoryFilter = {
 				'^STORAGE_UNIT_[%w]+',
+				'^locker[%w]+',
 		}
 	}
 )

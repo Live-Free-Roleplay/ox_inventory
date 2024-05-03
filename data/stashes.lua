@@ -92,6 +92,69 @@ return {
 		}
 	},
 
+	{
+		coords = vec3(2403.5688, 3128.0300, 48.1529),
+		target = {
+			loc = vec3(2403.5688, 3128.0300, 48.1529),
+			length = 5.2,
+			width = 5.6,
+			heading = 81.9361,
+			minZ = 49.49,
+			maxZ = 47.09,
+			label = 'Open Your Locker'
+		},
+		name = 'lockerA',
+		label = 'Shared Lockers',
+		owner = true,
+		slots = 100,
+		weight = 200000,
+		blip = {
+			id = 50, colour = 0, scale = 5.0
+		}
+	},
+
+	{
+		coords = vec3(-247.4497, 6240.3516, 31.4892),
+		target = {
+			loc = vec3(-247.4497, 6240.3516, 31.4892),
+			length = 5.2,
+			width = 5.6,
+			heading = 50.9386,
+			minZ = 30.4892,
+			maxZ = 32.4892,
+			label = 'Open Your Locker'
+		},
+		name = 'lockerB',
+		label = 'Shared Lockers',
+		owner = true,
+		slots = 100,
+		weight = 200000,
+		blip = {
+			id = 50, colour = 0, scale = 5.0
+		}
+	},
+
+	{
+		coords = vec3(-583.0085, -1767.3864, 23.1803-0.9),
+		target = {
+			loc = vec3(-583.0085, -1767.3864, 23.1803-0.9),
+			length = 5.2,
+			width = 5.6,
+			heading = 321.4324,
+			minZ = 22.1803-0.9,
+			maxZ = 24.1803-0.9,
+			label = 'Open Your Locker'
+		},
+		name = 'lockerC',
+		label = 'Shared Lockers',
+		owner = true,
+		slots = 100,
+		weight = 200000,
+		blip = {
+			id = 50, colour = 0, scale = 5.0
+		}
+	},
+
 	--[[{
 		coords = vec3(301.3, -600.23, 43.28),
 		target = {

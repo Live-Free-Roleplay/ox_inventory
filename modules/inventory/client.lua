@@ -342,6 +342,18 @@ end
 Inventory.Stashes = setmetatable(lib.load('data.stashes'), {
 	__call = function(self)
 		for id, stash in pairs(self) do
+			if stash.blip then
+				local stashblip = AddBlipForCoord(stash.coords.x, stash.coords.y, stash.coords.z)
+				SetBlipSprite(stashblip, 478)
+				SetBlipColour(stashblip, 10)
+				SetBlipScale(stashblip, 0.6)
+				SetBlipDisplay(stashblip, 2)
+				SetBlipAsShortRange(stashblip, true)
+				BeginTextCommandSetBlipName("STRING")
+				AddTextComponentString(stash.label)
+				EndTextCommandSetBlipName(stashblip)
+			end
+
 			if stash.jobs then stash.groups = stash.jobs end
 
 			if stash.point then
