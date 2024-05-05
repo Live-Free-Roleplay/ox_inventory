@@ -4024,11 +4024,11 @@ return {
 	},
 
 	['herion_baggie'] = {
-		label = 'Herion Baggie',
+		label = 'Heroin Baggie',
 		weight = 200,
 		stack = true,
 		close = true,
-		description = nil
+		description = nil,
 	},
 
 	['hotdog'] = {
@@ -4100,7 +4100,7 @@ return {
 		weight = 100,
 		stack = true,
 		close = true,
-		description = nil
+		description = nil,
 	},
 
 	['morphine'] = {
@@ -4235,7 +4235,7 @@ return {
 	},
 
 	['refined_herion'] = {
-		label = 'Refined Herion',
+		label = 'Refined Heroin',
 		weight = 250,
 		stack = true,
 		close = true,
@@ -4353,7 +4353,7 @@ return {
 	},
 
 	['unrefined_herion'] = {
-		label = 'Unrefined Herion',
+		label = 'Unrefined Heroin',
 		weight = 250,
 		stack = true,
 		close = true,
@@ -4409,7 +4409,7 @@ return {
 	},
 
 	['white_herion'] = {
-		label = 'White Herion',
+		label = 'White Heroin',
 		weight = 250,
 		stack = true,
 		close = true,
