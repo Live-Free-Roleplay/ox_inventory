@@ -2330,9 +2330,11 @@ end
 
 AddEventHandler('playerDropped', function()
 	server.playerDropped(source)
-
+	
 	if GetNumPlayerIndices() == 0 then
 		Inventory.SaveInventories(false, true)
+	else
+		saveInventories(true)
 	end
 end)
 
