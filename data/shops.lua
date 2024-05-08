@@ -149,8 +149,7 @@ return {
 		blip = {
 			id = 51, colour = 26, scale = 0.8
 		}, inventory = {
-			{ name = 'medikit', price = 500 },
-			{ name = 'bandage', price = 200 },
+			{ name = 'bandage', price = 100 },
 			{ name = 'caustic_soda', price = 15 },
       { name = 'sulfric_acid', price = 65 },
       { name = 'potassium_salt', price = 25 },
