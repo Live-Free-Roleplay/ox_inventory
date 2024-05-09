@@ -474,6 +474,7 @@ Item('ammobox-9', function(event, item, inventory, slot, data)
 	end
 end)
 
+
 Item('ammobox-45', function(event, item, inventory, slot, data)
 	if event == 'usedItem' then
 	 Inventory.AddItem(inventory, 'ammo-45', 25)
@@ -486,6 +487,48 @@ Item('toolbox', function(event, item, inventory, slot, data)
 	 Inventory.AddItem(inventory, 'screwdriver', 1)
 	 Inventory.AddItem(inventory, 'file', 1)
 	 Inventory.AddItem(inventory, 'pliers', 1)
+ end
+end)
+
+Item('rolling_paper_box', function(event, item, inventory, slot, data)
+	if event == 'usedItem' then
+	 Inventory.AddItem(inventory, 'rolling_paper', 25)
+ end
+end)
+
+Item('tobacco_can', function(event, item, inventory, slot, data)
+	if event == 'usedItem' then
+	 Inventory.AddItem(inventory, 'tobacco', 25)
+ end
+end)
+
+Item('cigs_69brand', function(event, item, inventory, slot, data)
+	if event == 'usedItem' then
+	 Inventory.AddItem(inventory, 'cigarette', 20)
+ end
+end)
+
+Item('cigs_cardiaque', function(event, item, inventory, slot, data)
+	if event == 'usedItem' then
+	 Inventory.AddItem(inventory, 'cigarette', 20)
+ end
+end)
+
+Item('cigs_debonaireblue', function(event, item, inventory, slot, data)
+	if event == 'usedItem' then
+	 Inventory.AddItem(inventory, 'cigarette', 20)
+ end
+end)
+
+Item('cigs_debonairegreen', function(event, item, inventory, slot, data)
+	if event == 'usedItem' then
+	 Inventory.AddItem(inventory, 'cigarette', 20)
+ end
+end)
+
+Item('cigs_redwood', function(event, item, inventory, slot, data)
+	if event == 'usedItem' then
+	 Inventory.AddItem(inventory, 'cigarette', 20)
  end
 end)
 
