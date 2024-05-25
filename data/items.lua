@@ -728,7 +728,7 @@ return {
 			close = true,
 			description = "A simple sandwich for a simple day",
 			client = {
-					status = { hunger = 200000 },
+					status = { hunger = 300000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'prop_sandwich_01', 
 					pos = vec3(0.05, -0.02, -0.03), rot = vec3(150.0, 340.0, 170.0) },
@@ -743,7 +743,7 @@ return {
 		close = true,
 		description = "A hamburger that you can eat",
 		client = {
-				status = { hunger = 230000 },
+				status = { hunger = 330000 },
 				anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 				prop = { model = 'prop_cs_burger_01', 
 				pos = vec3(0.05, -0.02, -0.03), rot = vec3(150.0, 340.0, 170.0) },
@@ -758,7 +758,7 @@ return {
 			close = true,
 			description = "A hamburger that you can eat, with cheese",
 			client = {
-					status = { hunger = 230000 },
+					status = { hunger = 330000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'prop_cs_burger_01', 
 					pos = vec3(0.05, -0.02, -0.03), rot = vec3(150.0, 340.0, 170.0) },
@@ -773,7 +773,7 @@ return {
 			close = true,
 			description = "A hamburger that you can eat, with cheese & bacon",
 			client = {
-					status = { hunger = 235000 },
+					status = { hunger = 335000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'prop_cs_burger_01', 
 					pos = vec3(0.05, -0.02, -0.03), rot = vec3(150.0, 340.0, 170.0) },
@@ -788,7 +788,7 @@ return {
 			close = true,
 			description = "Not made with real dogs or meat",
 			client = {
-					status = { hunger = 150000 },
+					status = { hunger = 200000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'prop_cs_hotdog_01', 
 					pos = vec3(0.06, -0.01, -0.03), rot = vec3(60.0, -90.0, 0.0) },
@@ -803,7 +803,7 @@ return {
 			close = true,
 			description = "นี่คือบะหมี่",
 			client = {
-					status = { hunger = 160000 },
+					status = { hunger = 210000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'v_ret_fh_noodle', 
 					pos = vec3(-0.03, 0.01, 0.05), 
@@ -819,7 +819,7 @@ return {
 			close = true,
 			description = "Rib flavored chips, made with real wood chips",
 			client = {
-					status = { hunger = 120000 },
+					status = { hunger = 200000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'prop_food_chips', 
 					pos = vec3(-0.01, 0.0, -0.02), rot = vec3(0.0, 0.0, -45.0) },
@@ -840,7 +840,7 @@ return {
 			close = true,
 			description = "Rib flavored chips, made with real wood chips",
 			client = {
-					status = { hunger = 80000 },
+					status = { hunger = 150000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'ng_proc_food_chips01b', 
 					pos = vec3(0.0, 0.08, 0.05), rot = vec3(90.0, 0.0, -45.0) },
@@ -855,7 +855,7 @@ return {
 			close = true,
 			description = "Cheese flavored chips, made with real rats",
 			client = {
-					status = { hunger = 80000 },
+					status = { hunger = 150000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'ng_proc_food_chips01a', 
 					pos = vec3(0.0, 0.08, 0.05), rot = vec3(90.0, 0.0, -45.0) },
@@ -870,7 +870,7 @@ return {
 			close = true,
 			description = "Candy make your tongue go brrrr",
 			client = {
-					status = { hunger = 60000 },
+					status = { hunger = 120000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'prop_candy_pqs', 
 					pos = vec3(0.0, 0.02, 0.05), rot = vec3(90.0, 0.0, -45.0) },
@@ -885,7 +885,7 @@ return {
 			close = true,
 			description = "Yes, from the trees comes deez apples",
 			client = {
-					status = { hunger = 90000 },
+					status = { hunger = 140000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'sf_prop_sf_apple_01a', 
 					pos = vec3(0.03, -0.02, -0.03), rot = vec3(300.0, 340.0, 170.0) },
@@ -900,7 +900,7 @@ return {
 			close = true,
 			description = "b a n a n a n a n a n a",
 			client = {
-					status = { hunger = 90000 },
+					status = { hunger = 160000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'v_res_tre_banana', 
 					pos = vec3(0.05, -0.02, 0.01), rot = vec3(270.0, 90.0, 0.0) },
@@ -921,7 +921,7 @@ return {
 			close = true,
 			description = "Mmmmm, refrence",
 			client = {
-					status = { hunger = 100000 },
+					status = { hunger = 150000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'bzzz_foodpack_donut002', 
 					bone = 18905,
@@ -938,7 +938,7 @@ return {
 			close = true,
 			description = "Mmmmm, refrence",
 			client = {
-					status = { hunger = 100000 },
+					status = { hunger = 150000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'bzzz_foodpack_donut001', 
 					bone = 18905,
@@ -955,7 +955,7 @@ return {
 			close = true,
 			description = "Mmmmm, refrence",
 			client = {
-					status = { hunger = 60000 },
+					status = { hunger = 100000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'bzzz_food_dessert_a', 
 					bone = 18905,
@@ -972,7 +972,7 @@ return {
 			close = true,
 			description = "Why yes, your brain is freezing",
 			client = {
-					status = { hunger = 70000 },
+					status = { hunger = 100000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'bzzz_icecream_cherry', 
 					bone = 18905,
@@ -989,7 +989,7 @@ return {
 			close = true,
 			description = "Why yes, your brain is freezing",
 			client = {
-					status = { hunger = 70000 },
+					status = { hunger = 100000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'bzzz_icecream_chocolate', 
 					bone = 18905,
@@ -1006,7 +1006,7 @@ return {
 			close = true,
 			description = "Why yes, your brain is freezing",
 			client = {
-					status = { hunger = 70000 },
+					status = { hunger = 100000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'bzzz_icecream_lemon', 
 					bone = 18905,
@@ -1023,7 +1023,7 @@ return {
 			close = true,
 			description = "Why yes, your brain is freezing",
 			client = {
-					status = { hunger = 70000 },
+					status = { hunger = 100000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'bzzz_icecream_pistachio', 
 					bone = 18905,
@@ -1040,7 +1040,7 @@ return {
 			close = true,
 			description = "Why yes, your brain is freezing",
 			client = {
-					status = { hunger = 70000 },
+					status = { hunger = 100000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'bzzz_icecream_raspberry', 
 					bone = 18905,
@@ -1057,7 +1057,7 @@ return {
 			close = true,
 			description = "Why yes, your brain is freezing",
 			client = {
-					status = { hunger = 70000 },
+					status = { hunger = 100000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'bzzz_icecream_stracciatella', 
 					bone = 18905,
@@ -1074,7 +1074,7 @@ return {
 			close = true,
 			description = "Why yes, your brain is freezing",
 			client = {
-					status = { hunger = 70000 },
+					status = { hunger = 100000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'bzzz_icecream_strawberry', 
 					bone = 18905,
@@ -1091,7 +1091,7 @@ return {
 			close = true,
 			description = "Why yes, your brain is freezing",
 			client = {
-					status = { hunger = 70000 },
+					status = { hunger = 100000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'bzzz_icecream_walnut', 
 					bone = 18905,
@@ -1120,7 +1120,7 @@ return {
 			close = true,
 			description = "If you think you need more, you do",
 			client = {
-					status = { thirst = 400000, stress = -10000 },
+					status = { thirst = 500000, stress = -10000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'vw_prop_casino_water_bottle_01a', 
 					pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
@@ -1135,7 +1135,7 @@ return {
 			close = true,
 			description = "You need strong bones for crimes",
 			client = {
-					status = { thirst = 300000 },
+					status = { thirst = 400000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'v_res_tt_milk', 
 					bone = 18905,
@@ -1158,7 +1158,7 @@ return {
 			close = true,
 			description = "Who put cheese on my pepperoni",
 			client = {
-					status = { hunger = 210000 },
+					status = { hunger = 310000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'knjgh_pizzaslice5', 
 					pos = vec3(0.0500, -0.0300, -0.0700), 
@@ -1175,7 +1175,7 @@ return {
 			close = true,
 			description = "Is it enough cheese? No",
 			client = {
-					status = { hunger = 210000 },
+					status = { hunger = 310000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'knjgh_pizzaslice4', 
 					pos = vec3(0.0500, -0.0300, -0.0700), 
@@ -1192,7 +1192,7 @@ return {
 			close = true,
 			description = "Fungi on my pizza? Who thought of this?",
 			client = {
-					status = { hunger = 210000 },
+					status = { hunger = 310000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'knjgh_pizzaslice3', 
 					pos = vec3(0.0500, -0.0300, -0.0700), 
@@ -1209,7 +1209,7 @@ return {
 			close = true,
 			description = "I know, I thought it was alcohol pizza too",
 			client = {
-					status = { hunger = 210000 },
+					status = { hunger = 310000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'knjgh_pizzaslice2', 
 					pos = vec3(0.0500, -0.0300, -0.0700), 
@@ -1226,7 +1226,7 @@ return {
 			close = true,
 			description = "When one meat isn't enough and 3 is weird",
 			client = {
-					status = { hunger = 210000 },
+					status = { hunger = 310000 },
 					anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 					prop = { model = 'knjgh_pizzaslice1', 
 					pos = vec3(0.0500, -0.0300, -0.0700), 
@@ -1247,7 +1247,7 @@ return {
 			close = true,
 			description = "As black as the color wheel lets it be",
 			client = {
-					status = { thirst = 280000, drunk = -50000, stress = 30000 },
+					status = { thirst = 380000, drunk = -50000, stress = 30000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'ng_proc_coffee_01a', 
 					pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
@@ -1262,7 +1262,7 @@ return {
 			close = true,
 			description = "What even is a mocha",
 			client = {
-					status = { thirst = 280000, drunk = -30000, stress = 10000 },
+					status = { thirst = 380000, drunk = -30000, stress = 10000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'ng_proc_coffee_01a', 
 					pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
@@ -1277,7 +1277,7 @@ return {
 			close = true,
 			description = "That might wake you up a smidge",
 			client = {
-					status = { thirst = 280000, drunk = -40000, stress = 20000 },
+					status = { thirst = 380000, drunk = -40000, stress = 20000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'ng_proc_coffee_01a', 
 					pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
@@ -1292,7 +1292,7 @@ return {
 			close = true,
 			description = "American coffee, with an o",
 			client = {
-					status = { thirst = 280000, drunk = -45000, stress = 20000 },
+					status = { thirst = 380000, drunk = -45000, stress = 20000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'ng_proc_coffee_01a', 
 					pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
@@ -1311,7 +1311,7 @@ return {
 			close = true,
 			description = "Hey, there is soda in my cocaine",
 			client = {
-					status = { thirst = 200000 },
+					status = { thirst = 300000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'prop_ecola_can', 
 					pos = vec3(0.0, 0.0, 0.0), rot = vec3(0.0, 0.0, 130.0) },
@@ -1326,7 +1326,7 @@ return {
 			close = true,
 			description = "It tastes like water punched you in the throat",
 			client = {
-					status = { thirst = 200000 },
+					status = { thirst = 300000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'ng_proc_sodacan_01b', 
 					pos = vec3(0.005, -0.001, 0.08), rot = vec3(0.0, 0.0, 160.0) },
@@ -1341,7 +1341,7 @@ return {
 			close = true,
 			description = "I didn't even know people wanted this",
 			client = {
-					status = { thirst = 200000 },
+					status = { thirst = 300000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'prop_orang_can_01', 
 					pos = vec3(0.0, 0.0, 0.0), rot = vec3(0.0, 0.0, 130.0) },
@@ -1356,7 +1356,7 @@ return {
 			close = true,
 			description = "Drinking too much of this wont kill you. I think.",
 			client = {
-					status = { thirst = 200000, stress = -150000 },
+					status = { thirst = 300000, stress = -150000 },
 					anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 					prop = { model = 'sf_prop_sf_can_01a', 
 					pos = vec3(0.025, 0.010, 0.05), rot = vec3(5.0, 5.0, -180.5) },
@@ -4015,7 +4015,7 @@ return {
 		close = true,
 		description = "A hamburger that you can eat",
 		client = {
-				status = { hunger = 230000 },
+				status = { hunger = 360000 },
 				anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
 				prop = { model = 'prop_cs_burger_01', 
 				pos = vec3(0.05, -0.02, -0.03), rot = vec3(150.0, 340.0, 170.0) },
