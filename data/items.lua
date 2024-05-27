@@ -4121,7 +4121,7 @@ return {
 
 	['opium_seed'] = {
 		label = 'Opium Seed',
-		weight = 250,
+		weight = 100,
 		stack = true,
 		close = true,
 		description = nil
@@ -4808,7 +4808,7 @@ return {
 
 	['opium'] = {
 		label = 'Opium',
-		weight = 250,
+		weight = 100,
 		stack = true,
 		close = true,
 		description = nil
