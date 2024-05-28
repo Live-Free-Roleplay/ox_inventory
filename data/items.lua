@@ -4089,7 +4089,7 @@ return {
 
 	['medikit'] = {
 		label = 'Medikit',
-		weight = 2000,
+		weight = 1000,
 		stack = true,
 		close = true,
 		description = nil
@@ -4570,7 +4570,7 @@ return {
 
 	['icepack'] = {
 		label = 'Ice Pack',
-		weight = 1000,
+		weight = 500,
 		stack = true,
 		close = true,
 		description = nil
@@ -4627,7 +4627,7 @@ return {
 
 	['sedative'] = {
 		label = 'Sedative',
-		weight = 500,
+		weight = 250,
 		stack = true,
 		close = true,
 		description = nil
@@ -4635,7 +4635,7 @@ return {
 
 	['defib'] = {
 		label = 'Defibrillator',
-		weight = 2000,
+		weight = 1000,
 		stack = true,
 		close = true,
 		description = nil
@@ -4651,7 +4651,7 @@ return {
 
 	['stretcher'] = {
 		label = 'Foldable Stretcher',
-		weight = 5000,
+		weight = 3000,
 		stack = true,
 		close = true,
 		description = nil
@@ -4666,21 +4666,21 @@ return {
   
   ['wheelchair'] = {
     label = 'Wheel Chair',
-    weight = 4000,
+    weight = 2000,
     stack = false,
     close = true,
   },
   
   ['crutch'] = {
 		label = 'Crutch',
-		weight = 2000,
+		weight = 1000,
 		stack = false,
 		close = true,
 	},
 
 	['suturekit'] = {
 		label = 'Suture Kit',
-		weight = 600,
+		weight = 300,
 		stack = true,
 		close = true,
 		description = nil
@@ -4688,7 +4688,7 @@ return {
 
 	['burncream'] = {
 		label = 'Burn Cream',
-		weight = 300,
+		weight = 200,
 		stack = true,
 		close = true,
 		description = nil
@@ -4696,7 +4696,7 @@ return {
 
 	['tweezers'] = {
 		label = 'Tweezers',
-		weight = 100,
+		weight = 50,
 		stack = true,
 		close = true,
 		description = nil

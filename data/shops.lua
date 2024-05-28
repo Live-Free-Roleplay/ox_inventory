@@ -327,6 +327,7 @@ return {
 			{ name = 'medbag', price = 0 },
       { name = 'bandage', price = 0 },
       { name = 'armour', price = 0 },
+			{ name = 'bag', price = 0 },
       { name = 'radio', price = 0, metadata = { serial = 'EMS'} }
 		}, locations = {
 			vec3(306.63, -601.44, 43.28-0.95)
