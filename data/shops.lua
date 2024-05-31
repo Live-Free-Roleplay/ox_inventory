@@ -337,6 +337,25 @@ return {
 		}
 	},
 
+	Mechanic = {
+		name = 'Mechanic Shop',
+		groups = {
+			['lsc_mechanic'] = 0,
+			['mechanic_ottos'] = 0,
+		},
+		blip = {
+			id = 544, colour = 69, scale = 0.6
+		}, inventory = {
+			{ name = 'mechanic_tablet', price = 0 },
+		}, locations = {
+			vec3(-345.6418, -131.7058, 39.0097),
+			vec3(836.1068, -819.5611, 26.3326),
+		}, targets = {
+      { loc = vec3(-346.6418, -131.7058, 39.0097), length = 3.0, width = 3.0, heading = 77.8339, minZ = 39.0-0.4, maxZ = 39.0, distance = 4 },
+			{ loc = vec3(836.1068, -819.5611, 26.3326), length = 3.0, width = 3.0, heading = 280.0, minZ = 26.0-0.4, maxZ = 26.0, distance = 4 },
+		}
+	},
+
 	--[[BlackMarketArms = {
 		name = 'Black Market (Arms)',
 		inventory = {

@@ -72,12 +72,12 @@ return {
 	},
 
 	{
-		coords = vec3(838.98, -825.9, 26.33),
+		coords = vec3(837.3580, -814.5649, 26.3534),
 		target = {
-			loc = vec3(838.98, -825.9, 26.33),
+			loc = vec3(837.3580, -814.5649, 26.3534),
 			length = 5.2,
 			width = 5.6,
-			heading = 99.86,
+			heading = 270.0,
 			minZ = 26.33-0.5,
 			maxZ = 26.33+0.5,
 			label = 'Mechanic Storage'
@@ -85,10 +85,31 @@ return {
 		name = 'otto_storage',
 		label = 'Mechanic Storage',
 		owner = false,
-		slots = 100,
-		weight = 1000000,
+		slots = 200,
+		weight = 2000000,
 		groups = {
 			['mechanic_ottos'] = 0,
+		}
+	},
+
+	{
+		coords = vec3(-345.8214, -128.0102, 39.0097),
+		target = {
+			loc = vec3(-345.8214, -128.0102, 39.0097),
+			length = 5.2,
+			width = 5.6,
+			heading = 76.0,
+			minZ = 39.33-0.5,
+			maxZ = 39.33+0.5,
+			label = 'Mechanic Storage'
+		},
+		name = 'lsc_storage',
+		label = 'Mechanic Storage',
+		owner = false,
+		slots = 200,
+		weight = 2000000,
+		groups = {
+			['lsc_mechanic'] = 0,
 		}
 	},
 
