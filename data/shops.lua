@@ -197,6 +197,7 @@ return {
 			{ name = 'chop_torch', price = 400 },
 			{ name = 'chop_lugwrench', price = 400 },
 			{ name = 'duct_tape', price = 200 },
+			{ name = 'racingtablet', price = 10000 },
 		}, locations = {
 			vec3(-3153.87,1053.78,20.86),
 			vec3(-11.13,6499.44,32.5)

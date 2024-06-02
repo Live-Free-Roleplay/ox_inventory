@@ -1,4 +1,13 @@
 return {
+	['racingtablet'] = {
+    label = 'Racing tablet',
+    weight = 500,
+    description = 'Seems like something to do with cars.',
+    stack = false,
+    client = {
+        export = 'rahe-racing.racingtablet',
+    }
+	},
 	['bobby_pin'] = {
 		label = 'Bobby Pin',
 		weight = 20,
