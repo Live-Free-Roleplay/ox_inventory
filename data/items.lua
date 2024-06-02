@@ -1,4 +1,10 @@
 return {
+	['bobby_pin'] = {
+		label = 'Bobby Pin',
+		weight = 20,
+		stack = true,
+		close = true,
+	},
 	["windshield"] = {
     label = "Windshield",
     weight = 500,
