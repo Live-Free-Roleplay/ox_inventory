@@ -93,14 +93,14 @@ return {
 	},
 
 	{
-		coords = vec3(-345.8214, -128.0102, 39.0097),
+		coords = vec3(-324.7111, -107.6075, 39.0640),
 		target = {
-			loc = vec3(-345.8214, -128.0102, 39.0097),
+			loc = vec3(-324.7111, -107.6075, 39.0640),
 			length = 5.2,
-			width = 5.6,
-			heading = 76.0,
-			minZ = 39.33-0.5,
-			maxZ = 39.33+0.5,
+			width = 10.6,
+			heading = 344.4397,
+			minZ = 39.0640-0.8,
+			maxZ = 39.0640+0.8,
 			label = 'Mechanic Storage'
 		},
 		name = 'lsc_storage',
