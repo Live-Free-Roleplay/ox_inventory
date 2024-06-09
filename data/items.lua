@@ -1,4 +1,28 @@
 return {
+	['boostingtablet'] = {
+		label = 'Boosting tablet',
+		weight = 500,
+		description = "Seems like something's installed on this.",
+		client = {
+			export = 'rahe-boosting.boostingtablet',
+		}
+	},
+	['hackingdevice'] = {
+		label = 'Hacking device',
+		weight = 250,
+		description = 'Will allow you to bypass vehicle security systems.',
+		client = {
+			export = 'rahe-boosting.hackingdevice',
+		}
+	},
+	['gpshackingdevice'] = {
+		label = 'GPS hacking device',
+		weight = 250,
+		description = 'If you wish to disable vehicle GPS systems.',
+		client = {
+			export = 'rahe-boosting.gpshackingdevice',
+		}
+	},
 	['racingtablet'] = {
     label = 'Racing tablet',
     weight = 500,
